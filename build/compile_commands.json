@@ -1,0 +1,282 @@
+[
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/main.cc.o -c \"/home/xyt/dj/New stbr/main.cc\"",
+  "file": "/home/xyt/dj/New stbr/main.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/behaviors/behavior.cc.o -c \"/home/xyt/dj/New stbr/behaviors/behavior.cc\"",
+  "file": "/home/xyt/dj/New stbr/behaviors/behavior.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/behaviors/naobehavior.cc.o -c \"/home/xyt/dj/New stbr/behaviors/naobehavior.cc\"",
+  "file": "/home/xyt/dj/New stbr/behaviors/naobehavior.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/behaviors/naobehavior_Tactic.cc.o -c \"/home/xyt/dj/New stbr/behaviors/naobehavior_Tactic.cc\"",
+  "file": "/home/xyt/dj/New stbr/behaviors/naobehavior_Tactic.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/behaviors/checkfall.cc.o -c \"/home/xyt/dj/New stbr/behaviors/checkfall.cc\"",
+  "file": "/home/xyt/dj/New stbr/behaviors/checkfall.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/behaviors/kicking.cc.o -c \"/home/xyt/dj/New stbr/behaviors/kicking.cc\"",
+  "file": "/home/xyt/dj/New stbr/behaviors/kicking.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/behaviors/strategy.cc.o -c \"/home/xyt/dj/New stbr/behaviors/strategy.cc\"",
+  "file": "/home/xyt/dj/New stbr/behaviors/strategy.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/behaviors/pkbehaviors.cc.o -c \"/home/xyt/dj/New stbr/behaviors/pkbehaviors.cc\"",
+  "file": "/home/xyt/dj/New stbr/behaviors/pkbehaviors.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/behaviors/gazebobehavior.cc.o -c \"/home/xyt/dj/New stbr/behaviors/gazebobehavior.cc\"",
+  "file": "/home/xyt/dj/New stbr/behaviors/gazebobehavior.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/behaviors/params.cc.o -c \"/home/xyt/dj/New stbr/behaviors/params.cc\"",
+  "file": "/home/xyt/dj/New stbr/behaviors/params.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/behaviors/naobehavior_Roleassignment.cc.o -c \"/home/xyt/dj/New stbr/behaviors/naobehavior_Roleassignment.cc\"",
+  "file": "/home/xyt/dj/New stbr/behaviors/naobehavior_Roleassignment.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/behaviors/skl.cc.o -c \"/home/xyt/dj/New stbr/behaviors/skl.cc\"",
+  "file": "/home/xyt/dj/New stbr/behaviors/skl.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/behaviors/drawout.cc.o -c \"/home/xyt/dj/New stbr/behaviors/drawout.cc\"",
+  "file": "/home/xyt/dj/New stbr/behaviors/drawout.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/behaviors/km.cc.o -c \"/home/xyt/dj/New stbr/behaviors/km.cc\"",
+  "file": "/home/xyt/dj/New stbr/behaviors/km.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/behaviors/naobehavior_RoleassCoordinate.cc.o -c \"/home/xyt/dj/New stbr/behaviors/naobehavior_RoleassCoordinate.cc\"",
+  "file": "/home/xyt/dj/New stbr/behaviors/naobehavior_RoleassCoordinate.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/servercomm/primitives.cc.o -c \"/home/xyt/dj/New stbr/servercomm/primitives.cc\"",
+  "file": "/home/xyt/dj/New stbr/servercomm/primitives.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/parser/parser.cc.o -c \"/home/xyt/dj/New stbr/parser/parser.cc\"",
+  "file": "/home/xyt/dj/New stbr/parser/parser.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/math/hctmatrix.cc.o -c \"/home/xyt/dj/New stbr/math/hctmatrix.cc\"",
+  "file": "/home/xyt/dj/New stbr/math/hctmatrix.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/math/vecposition.cc.o -c \"/home/xyt/dj/New stbr/math/vecposition.cc\"",
+  "file": "/home/xyt/dj/New stbr/math/vecposition.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/math/Geometry.cc.o -c \"/home/xyt/dj/New stbr/math/Geometry.cc\"",
+  "file": "/home/xyt/dj/New stbr/math/Geometry.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/worldmodel/worldmodel.cc.o -c \"/home/xyt/dj/New stbr/worldmodel/worldmodel.cc\"",
+  "file": "/home/xyt/dj/New stbr/worldmodel/worldmodel.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/bodymodel/bodymodel.cc.o -c \"/home/xyt/dj/New stbr/bodymodel/bodymodel.cc\"",
+  "file": "/home/xyt/dj/New stbr/bodymodel/bodymodel.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/particlefilter/PFLocalization.cc.o -c \"/home/xyt/dj/New stbr/particlefilter/PFLocalization.cc\"",
+  "file": "/home/xyt/dj/New stbr/particlefilter/PFLocalization.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/particlefilter/Particle.cc.o -c \"/home/xyt/dj/New stbr/particlefilter/Particle.cc\"",
+  "file": "/home/xyt/dj/New stbr/particlefilter/Particle.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/skills/skill.cc.o -c \"/home/xyt/dj/New stbr/skills/skill.cc\"",
+  "file": "/home/xyt/dj/New stbr/skills/skill.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/skills/curve3d.cc.o -c \"/home/xyt/dj/New stbr/skills/curve3d.cc\"",
+  "file": "/home/xyt/dj/New stbr/skills/curve3d.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/ikfast/ikfast.cpp.o -c \"/home/xyt/dj/New stbr/ikfast/ikfast.cpp\"",
+  "file": "/home/xyt/dj/New stbr/ikfast/ikfast.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/headers/headers.cc.o -c \"/home/xyt/dj/New stbr/headers/headers.cc\"",
+  "file": "/home/xyt/dj/New stbr/headers/headers.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/audio/audio.cc.o -c \"/home/xyt/dj/New stbr/audio/audio.cc\"",
+  "file": "/home/xyt/dj/New stbr/audio/audio.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/rvdraw/rvdraw.cc.o -c \"/home/xyt/dj/New stbr/rvdraw/rvdraw.cc\"",
+  "file": "/home/xyt/dj/New stbr/rvdraw/rvdraw.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/MotionCore.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/MotionCore.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/MotionCore.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/Module.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/Module.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/Module.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/common/NMatrix.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/common/NMatrix.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/common/NMatrix.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/math/MVTools.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/math/MVTools.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/math/MVTools.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/math/RotationMatrix.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/math/RotationMatrix.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/math/RotationMatrix.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/memory/Lock.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/memory/Lock.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/memory/Lock.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/memory/Logger.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/memory/Logger.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/memory/Logger.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/memory/Memory.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/memory/Memory.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/memory/Memory.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/memory/MemoryBlock.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/memory/MemoryBlock.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/memory/MemoryBlock.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/memory/PrivateMemory.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/memory/PrivateMemory.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/memory/PrivateMemory.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/memory/SharedMemory.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/memory/SharedMemory.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/memory/SharedMemory.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/motion/MotionModule.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/motion/MotionModule.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/motion/MotionModule.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/motion/UTWalkEngine.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/motion/UTWalkEngine.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/motion/UTWalkEngine.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/sensor/SensorModule.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/sensor/SensorModule.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/sensor/SensorModule.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/sensor/InertialFilter.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/sensor/InertialFilter.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/sensor/InertialFilter.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/kinematics/InverseKinematics.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/kinematics/InverseKinematics.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/kinematics/InverseKinematics.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/kinematics/ForwardKinematics.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/kinematics/ForwardKinematics.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/kinematics/ForwardKinematics.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/kinematics/KinematicsModule.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/kinematics/KinematicsModule.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/kinematics/KinematicsModule.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/math/Geometry.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/math/Geometry.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/math/Geometry.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/common/PIDController.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/common/PIDController.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/common/PIDController.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/motion/WalkEngineParameters.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/motion/WalkEngineParameters.cpp\"",
+  "file": "/home/xyt/dj/New stbr/utwalk/motion/WalkEngineParameters.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/kalman/BallKF.cpp.o -c \"/home/xyt/dj/New stbr/kalman/BallKF.cpp\"",
+  "file": "/home/xyt/dj/New stbr/kalman/BallKF.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/kalman/PlayerKF.cpp.o -c \"/home/xyt/dj/New stbr/kalman/PlayerKF.cpp\"",
+  "file": "/home/xyt/dj/New stbr/kalman/PlayerKF.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/kalman/OrigKalmanFilter.cpp.o -c \"/home/xyt/dj/New stbr/kalman/OrigKalmanFilter.cpp\"",
+  "file": "/home/xyt/dj/New stbr/kalman/OrigKalmanFilter.cpp"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/optimization/optimizationbehaviors.cc.o -c \"/home/xyt/dj/New stbr/optimization/optimizationbehaviors.cc\"",
+  "file": "/home/xyt/dj/New stbr/optimization/optimizationbehaviors.cc"
+},
+{
+  "directory": "/home/xyt/dj/New stbr/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/stats/recordstatsbehavior.cc.o -c \"/home/xyt/dj/New stbr/stats/recordstatsbehavior.cc\"",
+  "file": "/home/xyt/dj/New stbr/stats/recordstatsbehavior.cc"
+}
+]

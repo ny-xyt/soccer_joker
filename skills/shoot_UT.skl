@@ -1,0 +1,76 @@
+STARTSKILL SKILL_SHOOT_UT_LEFT_LEG
+
+# State 1
+STARTSTATE
+settar EFF_LA1 $shoot_ut_p1 EFF_LA2 $shoot_ut_p2 EFF_LA3 $shoot_ut_p3 EFF_LA4 $shoot_ut_p4 EFF_LL1 $shoot_ut_p5 EFF_LL2 $shoot_ut_p6 EFF_LL3 $shoot_ut_p7 EFF_LL4 $shoot_ut_p8 EFF_LL5 $shoot_ut_p9 EFF_LL6 $shoot_ut_p10 EFF_RL1 $shoot_ut_p11 EFF_RL2 $shoot_ut_p12 EFF_RL3 $shoot_ut_p13 EFF_RL4 $shoot_ut_p14 EFF_RL5 $shoot_ut_p15 EFF_RL6 $shoot_ut_p16 EFF_RA1 $shoot_ut_p17 EFF_RA2 $shoot_ut_p18 EFF_RA3 $shoot_ut_p19 EFF_RA4 $shoot_ut_p20 EFF_LL7 $shoot_ut_p21 EFF_RL7 $shoot_ut_p22 end
+wait 0.03 - $shoot_ut_wait1 end
+ENDSTATE
+
+
+# State 2
+STARTSTATE
+settar EFF_LA1 $shoot_ut_p23 EFF_LA2 $shoot_ut_p24 EFF_LA3 $shoot_ut_p25 EFF_LA4 $shoot_ut_p26 EFF_LL1 $shoot_ut_p27 EFF_LL2 $shoot_ut_p28 EFF_LL3 $shoot_ut_p29 EFF_LL4 $shoot_ut_p30 EFF_LL5 $shoot_ut_p31 EFF_LL6 $shoot_ut_p32 EFF_RL1 $shoot_ut_p33 EFF_RL2 $shoot_ut_p34 EFF_RL3 $shoot_ut_p35 EFF_RL4 $shoot_ut_p36 EFF_RL5 $shoot_ut_p37 EFF_RL6 $shoot_ut_p38 EFF_RA1 $shoot_ut_p39 EFF_RA2 $shoot_ut_p40 EFF_RA3 $shoot_ut_p41 EFF_RA4 $shoot_ut_p42 EFF_LL7 $shoot_ut_p43 EFF_RL7 $shoot_ut_p44 end
+wait 0.01-$shoot_ut_wait2 end
+ENDSTATE
+
+
+# State 3
+STARTSTATE
+settar EFF_LA1 $shoot_ut_p45 EFF_LA2 $shoot_ut_p46 EFF_LA3 $shoot_ut_p47 EFF_LA4 $shoot_ut_p48 EFF_LL1 $shoot_ut_p49 EFF_LL2 $shoot_ut_p50 EFF_LL3 $shoot_ut_p51 EFF_LL4 $shoot_ut_p52 EFF_LL5 $shoot_ut_p53 EFF_LL6 $shoot_ut_p54 EFF_RL1 $shoot_ut_p55 EFF_RL2 $shoot_ut_p56 EFF_RL3 $shoot_ut_p57 EFF_RL4 $shoot_ut_p58 EFF_RL5 $shoot_ut_p59 EFF_RL6 $shoot_ut_p60 EFF_RA1 $shoot_ut_p61 EFF_RA2 $shoot_ut_p62 EFF_RA3 $shoot_ut_p63 EFF_RA4 $shoot_ut_p64 EFF_LL7 $shoot_ut_p65 EFF_RL7 $shoot_ut_p66 end
+wait 0.16-$shoot_ut_wait3 end
+ENDSTATE
+
+
+# State 4
+STARTSTATE
+settar EFF_LA1 $shoot_ut_p67 EFF_LA2 $shoot_ut_p68 EFF_LA3 $shoot_ut_p69 EFF_LA4 $shoot_ut_p70 EFF_LL1 $shoot_ut_p71 EFF_LL2 $shoot_ut_p72 EFF_LL3 $shoot_ut_p73 EFF_LL4 $shoot_ut_p74 EFF_LL5 $shoot_ut_p75 EFF_LL6 $shoot_ut_p76 EFF_RL1 $shoot_ut_p77 EFF_RL2 $shoot_ut_p78 EFF_RL3 $shoot_ut_p79 EFF_RL4 $shoot_ut_p80 EFF_RL5 $shoot_ut_p81 EFF_RL6 $shoot_ut_p82 EFF_RA1 $shoot_ut_p83 EFF_RA2 $shoot_ut_p84 EFF_RA3 $shoot_ut_p85 EFF_RA4 $shoot_ut_p86 EFF_LL7 $shoot_ut_p87 EFF_RL7 $shoot_ut_p88 end
+wait 0.01-$shoot_ut_wait4 end
+ENDSTATE
+
+
+# State 5
+STARTSTATE
+settar EFF_LA1 $shoot_ut_p89 EFF_LA2 $shoot_ut_p90 EFF_LA3 $shoot_ut_p91 EFF_LA4 $shoot_ut_p92 EFF_LL1 $shoot_ut_p93 EFF_LL2 $shoot_ut_p94 EFF_LL3 $shoot_ut_p95 EFF_LL4 $shoot_ut_p96 EFF_LL5 $shoot_ut_p97 EFF_LL6 $shoot_ut_p98 EFF_RL1 $shoot_ut_p99 EFF_RL2 $shoot_ut_p100 EFF_RL3 $shoot_ut_p101 EFF_RL4 $shoot_ut_p102 EFF_RL5 $shoot_ut_p103 EFF_RL6 $shoot_ut_p104 EFF_RA1 $shoot_ut_p105 EFF_RA2 $shoot_ut_p106 EFF_RA3 $shoot_ut_p107 EFF_RA4 $shoot_ut_p108 EFF_LL7 $shoot_ut_p109 EFF_RL7 $shoot_ut_p110 end
+wait 0.01-$shoot_ut_wait5 end
+ENDSTATE
+
+
+# State 6
+STARTSTATE
+settar EFF_LA1 $shoot_ut_p111 EFF_LA2 $shoot_ut_p112 EFF_LA3 $shoot_ut_p113 EFF_LA4 $shoot_ut_p114 EFF_LL1 $shoot_ut_p115 EFF_LL2 $shoot_ut_p116 EFF_LL3 $shoot_ut_p117 EFF_LL4 $shoot_ut_p118 EFF_LL5 $shoot_ut_p119 EFF_LL6 $shoot_ut_p120 EFF_RL1 $shoot_ut_p121 EFF_RL2 $shoot_ut_p122 EFF_RL3 $shoot_ut_p123 EFF_RL4 $shoot_ut_p124 EFF_RL5 $shoot_ut_p125 EFF_RL6 $shoot_ut_p126 EFF_RA1 $shoot_ut_p127 EFF_RA2 $shoot_ut_p128 EFF_RA3 $shoot_ut_p129 EFF_RA4 $shoot_ut_p130 EFF_LL7 $shoot_ut_p131 EFF_RL7 $shoot_ut_p132 end
+wait 0.01-$shoot_ut_wait6 end
+ENDSTATE
+
+
+# State 7
+STARTSTATE
+settar EFF_LA1 $shoot_ut_p133 EFF_LA2 $shoot_ut_p134 EFF_LA3 $shoot_ut_p135 EFF_LA4 $shoot_ut_p136 EFF_LL1 $shoot_ut_p137 EFF_LL2 $shoot_ut_p138 EFF_LL3 $shoot_ut_p139 EFF_LL4 $shoot_ut_p140 EFF_LL5 $shoot_ut_p141 EFF_LL6 $shoot_ut_p142 EFF_RL1 $shoot_ut_p143 EFF_RL2 $shoot_ut_p144 EFF_RL3 $shoot_ut_p145 EFF_RL4 $shoot_ut_p146 EFF_RL5 $shoot_ut_p147 EFF_RL6 $shoot_ut_p148 EFF_RA1 $shoot_ut_p149 EFF_RA2 $shoot_ut_p150 EFF_RA3 $shoot_ut_p151 EFF_RA4 $shoot_ut_p152 EFF_LL7 $shoot_ut_p153 EFF_RL7 $shoot_ut_p154 end
+wait 0.28-$shoot_ut_wait7 end
+ENDSTATE
+
+# State 8
+STARTSTATE
+settar EFF_LA1 $shoot_ut_p155 EFF_LA2 $shoot_ut_p156 EFF_LA3 $shoot_ut_p157 EFF_LA4 $shoot_ut_p158 EFF_LL1 $shoot_ut_p159 EFF_LL2 $shoot_ut_p160 EFF_LL3 $shoot_ut_p161 EFF_LL4 $shoot_ut_p162 EFF_LL5 $shoot_ut_p163 EFF_LL6 $shoot_ut_p164 EFF_RL1 $shoot_ut_p165 EFF_RL2 $shoot_ut_p166 EFF_RL3 $shoot_ut_p167 EFF_RL4 $shoot_ut_p168 EFF_RL5 $shoot_ut_p169 EFF_RL6 $shoot_ut_p170 EFF_RA1 $shoot_ut_p171 EFF_RA2 $shoot_ut_p172 EFF_RA3 $shoot_ut_p173 EFF_RA4 $shoot_ut_p174 EFF_LL7 $shoot_ut_p175 EFF_RL7 $shoot_ut_p176 end
+wait 0.10-$shoot_ut_wait8 end
+ENDSTATE
+
+
+
+# State 9
+STARTSTATE
+settar EFF_LA1 $shoot_ut_p177 EFF_LA2 $shoot_ut_p178 EFF_LA3 $shoot_ut_p179 EFF_LA4 $shoot_ut_p180 EFF_LL1 $shoot_ut_p181 EFF_LL2 $shoot_ut_p182 EFF_LL3 $shoot_ut_p183 EFF_LL4 $shoot_ut_p184 EFF_LL5 $shoot_ut_p185 EFF_LL6 $shoot_ut_p186 EFF_RL1 $shoot_ut_p187 EFF_RL2 $shoot_ut_p188 EFF_RL3 $shoot_ut_p189 EFF_RL4 $shoot_ut_p190 EFF_RL5 $shoot_ut_p191 EFF_RL6 $shoot_ut_p192 EFF_RA1 $shoot_ut_p193 EFF_RA2 $shoot_ut_p194 EFF_RA3 $shoot_ut_p195 EFF_RA4 $shoot_ut_p196 EFF_LL7 $shoot_ut_p197 EFF_RL7 $shoot_ut_p198 end
+wait 0.09-$shoot_ut_wait9 end
+ENDSTATE
+
+
+# State 10
+STARTSTATE
+settar EFF_LA1 $shoot_ut_p199 EFF_LA3 $shoot_ut_p200 EFF_LA4 $shoot_ut_p201 EFF_LL1 $shoot_ut_p202 EFF_LL2 $shoot_ut_p203 EFF_LL3 $shoot_ut_p204 EFF_LL4 $shoot_ut_p205 EFF_LL5 $shoot_ut_p206 EFF_LL6 $shoot_ut_p207 EFF_RL1 $shoot_ut_p208 EFF_RL2 $shoot_ut_p209 EFF_RL3 $shoot_ut_p210 EFF_RL4 $shoot_ut_p211 EFF_RL5 $shoot_ut_p212 EFF_RL6 $shoot_ut_p213 EFF_RA1 $shoot_ut_p214 EFF_RA2 $shoot_ut_p215 EFF_RA3 $shoot_ut_p216 EFF_RA4 $shoot_ut_p217 EFF_LL7 $shoot_ut_p218 EFF_RL7 $shoot_ut_p219 end
+wait 0.2-$shoot_ut_wait10 end
+ENDSTATE
+
+
+ENDSKILL
+
+REFLECTSKILL SKILL_SHOOT_UT_LEFT_LEG SKILL_SHOOT_UT_RIGHT_LEG
+

@@ -1,0 +1,3 @@
+/home/xyt/joker start/dj/New stbr/CMakeFiles/agentspark.dir
+/home/xyt/joker start/dj/New stbr/CMakeFiles/edit_cache.dir
+/home/xyt/joker start/dj/New stbr/CMakeFiles/rebuild_cache.dir

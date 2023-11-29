@@ -1,0 +1,82 @@
+# Time is in seconds.
+# Angles are in degrees.
+
+STARTSKILL SKILL_BLOCK_LEFT
+
+# State 0
+STARTSTATE
+settar EFF_LL1 (0+$block_p1) EFF_LL4 (0+$block_p2) EFF_LA2 (60+$block_p3) EFF_LA1 (120+$block_p4) end
+settar EFF_RL1 (0+$block_p5) EFF_RL4 (0+$block_p6) EFF_RA2 (-60+$block_p7) EFF_RA1 (120+$block_p8) end
+wait (0.05+$block_wait1) end
+ENDSTATE
+
+# State 1 
+STARTSTATE
+settar EFF_LL1 (-10+$block_p9) EFF_LL4 (0+$block_p10) EFF_LA2 (95+$block_p11) end
+settar EFF_RL1 (-10+$block_p12) EFF_RL4 (0+$block_p13) EFF_RA2 (-95+$block_p14) end
+wait (0.05+$block_wait2) end
+ENDSTATE
+
+# State 2 
+STARTSTATE
+settar EFF_LL1 (-20+$block_p15) EFF_LL4 (0+$block_p16) EFF_LL2 (5+$block_p17) end
+settar EFF_RL1 (-20+$block_p18) EFF_RL4 (0+$block_p19) EFF_RL2 (-5+$block_p20) end
+wait (0.05+$block_wait3) end
+ENDSTATE
+
+# State 3 
+STARTSTATE
+settar EFF_LL1 (-35+$block_p21) EFF_LL4 (0+$block_p22) EFF_LL2 (10+$block_p23) end
+settar EFF_RL1 (-35+$block_p24) EFF_RL4 (0+$block_p25) EFF_RL2 (-10+$block_p26) end
+wait (0.05+$block_wait4) end
+ENDSTATE
+
+# State 4 
+STARTSTATE
+settar EFF_LL1 (-45+$block_p27) EFF_LL4 (0+$block_p28) EFF_LL2 (20+$block_p29) end
+settar EFF_RL1 (-45+$block_p30) EFF_RL4 (0+$block_p31) EFF_RL2 (-20+$block_p32) end
+wait (0.05+$block_wait5) end
+ENDSTATE
+
+# State 5 
+STARTSTATE
+settar EFF_LL1 (-55+$block_p33) EFF_LL4 (0+$block_p34) EFF_LL2 (25+$block_p35) end
+settar EFF_RL1 (-55+$block_p36) EFF_RL4 (0+$block_p37) EFF_RL2 (-25+$block_p38) end
+wait (0.05+$block_wait6) end
+ENDSTATE
+
+# State 6 
+STARTSTATE
+settar EFF_LL1 (-65+$block_p39) EFF_LL4 (0+$block_p40) EFF_LL2 (30+$block_p41) end
+settar EFF_RL1 (-65+$block_p42) EFF_RL4 (0+$block_p43) EFF_RL2 (-30+$block_p44) end
+wait (0.05+$block_wait7) end
+ENDSTATE
+
+# State 7 
+STARTSTATE
+settar EFF_LL1 (-75+$block_p45) EFF_LL2 (35+$block_p46) end
+settar EFF_RL1 (-75+$block_p47) EFF_RL2 (-35+$block_p48) end
+wait (0.05+$block_wait8) end
+ENDSTATE
+
+# State 8 
+STARTSTATE
+settar EFF_LL1 (-85+$block_p49) EFF_LL2 (40+$block_p50) end
+settar EFF_RL1 (-85+$block_p51) EFF_RL2 (-40+$block_p52) end
+wait (0.05+$block_wait9) end
+ENDSTATE
+
+# State 9 
+STARTSTATE
+settar EFF_LL1 (-90+$block_p53) EFF_LL2 (45+$block_p54) end
+settar EFF_RL1 (-90+$block_p55) EFF_RL2 (-45+$block_p56) end
+wait (1.0+$block_wait10) end
+ENDSTATE
+
+
+
+ENDSKILL 
+
+REFLECTSKILL SKILL_BLOCK_LEFT SKILL_BLOCK_RIGHT
+
+

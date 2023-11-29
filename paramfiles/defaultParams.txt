@@ -1,0 +1,913 @@
+### Default parameters loaded for all agents ###
+
+##########################
+### UT WALK PARAMETERS ###
+##########################
+
+##<--Walk parameters for going to a target-->##
+// Maximum size of steps in radians and millimeters 
+utwalk_max_step_size_angle	1.22
+utwalk_max_step_size_x	50
+utwalk_max_step_size_y	40
+// How much center of mass is shifted from side to side during walk in millimeters
+utwalk_shift_amount	20
+// Height of the torso from ground in millimeters
+utwalk_walk_height	175
+// Maximum height of foot from ground in millimeters during step
+utwalk_step_height	20
+// Fraction of a phase the swing foot remains still before moving in the X-Y plane
+utwalk_fraction_still	0.2
+// Fraction of a phase that the swing foot spends on the ground before lifting
+utwalk_fraction_on_ground	0.2
+// Fraction  of a phase that the swing foot spends moving in the X-Y plane
+utwalk_fraction_moving	0.6
+// Fraction of a phase that the swing foot spends in the air
+utwalk_fraction_in_air	0.6
+// Duration of single step in seconds
+utwalk_phase_length	0.38
+// Expected difference between commanded COM and sensed COM
+utwalk_default_com_pos_x	0.0
+// Factors of how fast the step sizes change per time cycle (proportional controller)
+utwalk_pid_step_size_x	0.03
+utwalk_pid_step_size_y	0.03
+utwalk_pid_step_size_rot	0.03
+// Maximum COM error in millimeters before the steps are slowed
+utwalk_max_normal_com_error	7.5
+// Maximum COM error in millimeters before all velocity reach 0
+utwalk_max_acceptable_com_error	12.5
+// Constant offset between the torso and feet in millimeters
+utwalk_fwd_offset	2.5
+// Factor of the step size applied to the forwards position of the torso
+utwalk_fwd_offset_factor	0.5
+// Angle of foot when it hits the ground in radians
+utwalk_swing_ankle_offset	-0.087266463
+// Proportional controller values for the torso angles coming from IMU measurements
+utwalk_pid_tilt	0.15
+utwalk_pid_roll	0.2
+// Proportional controller values for controlling the COM 
+utwalk_pid_com_x	1.0
+utwalk_pid_com_y	1.0
+utwalk_pid_com_z	0.0
+### Default parameters loaded for all agents ###
+
+##########################
+### UT WALK PARAMETERS ###
+##########################
+
+##<--Walk parameters for going to a target-->##
+// Maximum size of steps in radians and millimeters 
+utwalk_max_step_size_angle	1.22
+utwalk_max_step_size_x	50
+utwalk_max_step_size_y	40
+// How much center of mass is shifted from side to side during walk in millimeters
+utwalk_shift_amount	20
+// Height of the torso from ground in millimeters
+utwalk_walk_height	175
+// Maximum height of foot from ground in millimeters during step
+utwalk_step_height	20
+// Fraction of a phase the swing foot remains still before moving in the X-Y plane
+utwalk_fraction_still	0.2
+// Fraction of a phase that the swing foot spends on the ground before lifting
+utwalk_fraction_on_ground	0.2
+// Fraction  of a phase that the swing foot spends moving in the X-Y plane
+utwalk_fraction_moving	0.6
+// Fraction of a phase that the swing foot spends in the air
+utwalk_fraction_in_air	0.6
+// Duration of single step in seconds
+utwalk_phase_length	0.38
+// Expected difference between commanded COM and sensed COM
+utwalk_default_com_pos_x	0.0
+// Factors of how fast the step sizes change per time cycle (proportional controller)
+utwalk_pid_step_size_x	0.03
+utwalk_pid_step_size_y	0.03
+utwalk_pid_step_size_rot	0.03
+// Maximum COM error in millimeters before the steps are slowed
+utwalk_max_normal_com_error	7.5
+// Maximum COM error in millimeters before all velocity reach 0
+utwalk_max_acceptable_com_error	12.5
+// Constant offset between the torso and feet in millimeters
+utwalk_fwd_offset	2.5
+// Factor of the step size applied to the forwards position of the torso
+utwalk_fwd_offset_factor	0.5
+// Angle of foot when it hits the ground in radians
+utwalk_swing_ankle_offset	-0.087266463
+// Proportional controller values for the torso angles coming from IMU measurements
+utwalk_pid_tilt	0.15
+utwalk_pid_roll	0.2
+// Proportional controller values for controlling the COM 
+utwalk_pid_com_x	1.0
+utwalk_pid_com_y	1.0
+utwalk_pid_com_z	0.0
+// Proportional controller values for moving arms to control COM
+utwalk_pid_arm_x	0.0
+utwalk_pid_arm_y	0.0
+
+#--Default parameters for walk balance control--#
+// Joint angle correction factors for body tilt and roll
+utwalk_balance_hip_pitch	0
+utwalk_balance_knee_pitch	0
+utwalk_balance_hip_roll		0
+utwalk_balance_ankle_roll	0
+
+#--Default parameters for toe models--#
+// Parameters for sinusoidal movement of toe and ankle pitch
+utwalk_toe_const_offset	  0
+utwalk_toe_amplitude	  0
+utwalk_toe_phase_offset	  0
+utwalk_ankle_const_offset	0
+utwalk_ankle_amplitude	  0
+utwalk_ankle_phase_offset	0
+
+##<--Walk parameters for sprint-->##
+sprint_utwalk_max_step_size_angle	2.3649397416830107
+sprint_utwalk_max_step_size_x	148.4704748740451
+sprint_utwalk_max_step_size_y	40.843815902232635
+sprint_utwalk_shift_amount	-11.553657746372481
+sprint_utwalk_walk_height	163.74160271075422
+sprint_utwalk_step_height	112.8661072947106
+sprint_utwalk_fraction_still	0.16242903020177513
+sprint_utwalk_fraction_on_ground	-0.08479912690102455
+sprint_utwalk_phase_length	0.05359081656258423
+sprint_utwalk_default_com_pos_x	-66.51545290548927
+sprint_utwalk_pid_step_size_x	0.023800225441540833
+sprint_utwalk_pid_step_size_y	0.07189970549976935
+sprint_utwalk_pid_step_size_rot	0.09965187821073064
+sprint_utwalk_max_normal_com_error	35.54236001164628
+sprint_utwalk_max_acceptable_com_error	95.88508722377773
+sprint_utwalk_fwd_offset	4.622904277566037
+sprint_utwalk_fwd_offset_factor	0.8841320266816213
+sprint_utwalk_fraction_moving	1.5823493433323366
+sprint_utwalk_fraction_in_air	1.2458577761603629
+sprint_utwalk_swing_ankle_offset	-0.0028623766115718637
+sprint_utwalk_pid_tilt	0.05768091682804335
+sprint_utwalk_pid_roll	0.09497189953988185
+sprint_utwalk_pid_com_x	1.8066253819982807
+sprint_utwalk_pid_com_y	0.5355105340430732
+sprint_utwalk_pid_com_z	0.04570793572431439
+sprint_utwalk_pid_arm_x	0.06480199987954229
+sprint_utwalk_pid_arm_y	-0.11290754555058559
+sprint_utwalk_toe_const_offset	-0.009903763038190877
+sprint_utwalk_toe_amplitude	-0.27698640597844265
+sprint_utwalk_toe_phase_offset	-0.022678337318118785
+sprint_utwalk_ankle_const_offset	-0.021539374820704102
+sprint_utwalk_ankle_amplitude	0.02916141180567766
+sprint_utwalk_ankle_phase_offset	-0.13406776715841867
+sprint_utwalk_balance_hip_pitch	0.8007947857402317
+sprint_utwalk_balance_knee_pitch	0.029679554922688103
+sprint_utwalk_balance_hip_roll	0.035315730981818644
+sprint_utwalk_balance_ankle_roll	0.017091282679912036
+
+##<--Walk parameters for positioning/dribbling-->##
+pos_utwalk_max_step_size_angle	1.22
+pos_utwalk_max_step_size_x	50
+pos_utwalk_max_step_size_y	40
+pos_utwalk_shift_amount	20
+pos_utwalk_walk_height	175
+pos_utwalk_step_height	20
+pos_utwalk_fraction_still	0.2
+pos_utwalk_fraction_on_ground	0.2
+pos_utwalk_fraction_moving	0.6
+pos_utwalk_fraction_in_air	0.6
+pos_utwalk_phase_length	0.38
+pos_utwalk_default_com_pos_x	0.0
+pos_utwalk_pid_step_size_x	0.03
+pos_utwalk_pid_step_size_y	0.03
+pos_utwalk_pid_step_size_rot	0.03
+pos_utwalk_max_normal_com_error	7.5
+pos_utwalk_max_acceptable_com_error	12.5
+pos_utwalk_fwd_offset	2.5
+pos_utwalk_fwd_offset_factor	0.5
+pos_utwalk_swing_ankle_offset	-0.087266463
+pos_utwalk_pid_tilt	0.15
+pos_utwalk_pid_roll	0.2
+pos_utwalk_pid_com_x	1.0
+pos_utwalk_pid_com_y	1.0
+pos_utwalk_pid_com_z	0.0
+pos_utwalk_pid_arm_x	0.0
+pos_utwalk_pid_arm_y	0.0
+pos_utwalk_balance_hip_pitch	0
+pos_utwalk_balance_knee_pitch	0
+pos_utwalk_balance_hip_roll		0
+pos_utwalk_balance_ankle_roll	0
+pos_utwalk_toe_const_offset	  0
+pos_utwalk_toe_amplitude	  0
+pos_utwalk_toe_phase_offset	  0
+pos_utwalk_ankle_const_offset	0
+pos_utwalk_ankle_amplitude	  0
+pos_utwalk_ankle_phase_offset	0
+
+##<--Walk parameters for approaching the ball to kick-->##
+app_utwalk_max_step_size_angle	1.22
+app_utwalk_max_step_size_x	50
+app_utwalk_max_step_size_y	40
+app_utwalk_shift_amount	20
+app_utwalk_walk_height	175
+app_utwalk_step_height	20
+app_utwalk_fraction_still	0.2
+app_utwalk_fraction_on_ground	0.2
+app_utwalk_fraction_moving	0.6
+app_utwalk_fraction_in_air	0.6
+app_utwalk_phase_length	0.38
+app_utwalk_default_com_pos_x	0.0
+app_utwalk_pid_step_size_x	0.03
+app_utwalk_pid_step_size_y	0.03
+app_utwalk_pid_step_size_rot	0.03
+app_utwalk_max_normal_com_error	7.5
+app_utwalk_max_acceptable_com_error	12.5
+app_utwalk_fwd_offset	2.5
+app_utwalk_fwd_offset_factor	0.5
+app_utwalk_swing_ankle_offset	-0.087266463
+app_utwalk_pid_tilt	0.15
+app_utwalk_pid_roll	0.2
+app_utwalk_pid_com_x	1.0
+app_utwalk_pid_com_y	1.0
+app_utwalk_pid_com_z	0.0
+app_utwalk_pid_arm_x	0.0
+app_utwalk_pid_arm_y	0.0
+app_utwalk_balance_hip_pitch	0
+app_utwalk_balance_knee_pitch	0
+app_utwalk_balance_hip_roll	0
+app_utwalk_balance_ankle_roll	0
+app_utwalk_toe_const_offset	  0
+app_utwalk_toe_amplitude	  0
+app_utwalk_toe_phase_offset	  0
+app_utwalk_ankle_const_offset	0
+app_utwalk_ankle_amplitude	  0
+app_utwalk_ankle_phase_offset	0
+
+// Parameters for approaching the ball
+kick_gen_approach_turnDist	0.25 
+kick_gen_approach_buff		0.05
+kick_gen_approach_estVelCorrection	0.05
+kick_gen_approach_navBallDist		0.5
+kick_gen_approach_navBallCollision	0.25
+kick_gen_approach_navBallAngle		40
+kick_gen_approach_maxDecelX		0.5
+kick_gen_approach_maxDecelY		0.5
+
+
+// Parameters for dribbling
+drib_coll_thresh				0.34
+drib_target					0.18
+
+#######################
+### KICK PARAMETERS ###
+#######################
+kick_p1	-10.838006037025417
+kick_p2	-103.71955816976403
+kick_p3	-43.430440569487246
+kick_p4	101.28119212053426
+kick_p5	7.658261194611743
+kick_p6	41.38225264518826
+kick_p7	-41.56153086167028
+kick_p8	21.46544927944515
+kick_p9	21.44797024890369
+kick_p11	12.764462443013857
+kick_p12	3.0565184591976786
+kick_p13	-4.536981220620417
+kick_p14	2.8735247788578437
+kick_xoffset	-0.1603430495683201
+kick_yoffset	-0.06240611557903331
+kick_scale1	7.531801912966671
+kick_scale2	1.492305985376229
+kick_scale3	0.8443403367773044
+kick_max_displacement_right	0.01066074312349858
+kick_max_displacement_left	0.009333401465073929
+kick_max_displacement_top	0.010558999524977072
+kick_max_displacement_bottom	0.010439194602718973
+kick_cw_angle_thresh	2.818134762252721
+kick_ccw_angle_thresh	2.3713167942693163
+kick_angle	0
+
+
+#######################
+### KICK SHORT ###
+#######################
+
+kick_short_p1	-19.557993714343954
+kick_short_p2	-116.33168663169225
+kick_short_p3	-46.494524238808935
+kick_short_p4	114.34191464255687
+kick_short_p5	8.009471678103255
+kick_short_p6	76.4847755838874
+kick_short_p7	-31.637611686590287
+kick_short_p8	24.56402804393056
+kick_short_p9	22.447324354397427
+kick_short_p11	12.412258757088757
+kick_short_p12	2.9108536812695958
+kick_short_p13	-4.139927460294173
+kick_short_p14	2.5793464431419877
+kick_short_xoffset	-0.18758631052473101
+kick_short_yoffset	-0.08133614974057074
+kick_short_scale1	5.295086273579072
+kick_short_scale2	1.9096575829831766
+kick_short_scale3	0.7896144070184505
+
+kick_short_max_displacement_right	0.01
+kick_short_max_displacement_left	0.01
+kick_short_max_displacement_top	0.01
+kick_short_max_displacement_bottom	0.01
+kick_short_cw_angle_thresh	2
+kick_short_ccw_angle_thresh	2
+kick_short_angle		0
+
+
+################
+### KICK LOW ###
+################
+
+kick_low_p1	118.7028557041455
+kick_low_p2	5.334231670402206
+kick_low_p3	-30.78691329181905
+kick_low_p4	-39.943072980608676
+kick_low_p5	7.7446338572141755
+kick_low_p6	-19.58915645962566
+kick_low_p7	54.276536293012796
+kick_low_p8	87.87263944063135
+kick_low_p9	-15.453091191579944
+kick_low_p10	65.44784308729614
+kick_low_p11	41.80995774860212
+kick_low_p12	-19.602604137251173
+kick_low_p13	-64.26717199975272
+kick_low_p14	13.891603123552011
+kick_low_p15	-2.1395021556027674
+kick_low_p16	4.531735029285864
+kick_low_p17	36.40378151150501
+kick_low_p18	-1.5779326316560285
+kick_low_p19	82.5823071372808
+kick_low_p20	-0.20961826611982026
+kick_low_p21	-15.07534195600573
+kick_low_p22	34.29580256780963
+kick_low_p23	8.127543575352892
+kick_low_p24	57.64961645076508
+kick_low_p25	6.951528490583517
+kick_low_p26	-62.72912359840872
+kick_low_p87	80.80531387221686
+kick_low_p88	11.527616569087009
+kick_low_p89	41.51159782514146
+kick_low_p90	-20.832105715228987
+kick_low_p91	-1.2422398357170124
+kick_low_p92	48.64974953741113
+kick_low_p93	-5.3867303059928435
+kick_low_p94	49.3717210263428
+kick_low_p95	-6.8675550811612265
+kick_low_p96	53.91663712362846
+kick_low_p97	-10.27486967019658
+kick_low_p98	-4.902273193705117
+kick_low_p99	30.899559302007493
+kick_low_p100	21.332645560418968
+kick_low_p101	-91.50875337279166
+kick_low_p102	-1.872619361533299
+kick_low_p103	-69.23200924941051
+kick_low_p104	40.74496346292092
+kick_low_p105	72.66284238292005
+kick_low_p106	75.00496678965426
+kick_low_p107	-103.31457075657949
+kick_low_p108	40.012802898346266
+kick_low_p109	31.377446306957765
+kick_low_p110	31.06335210003288
+kick_low_p27	61.58094740762718
+kick_low_p28	31.818875494888573
+kick_low_p29	-27.248118456371817
+kick_low_p30	6.488996646426697
+kick_low_p31	-51.94768399853158
+kick_low_p32	17.7056526455038
+kick_low_p33	40.0820821169888
+kick_low_p34	-6.279209284870536
+kick_low_p35	-8.352321846880363
+kick_low_p36	21.941591692355978
+kick_low_p37	-30.244296977208336
+kick_low_p38	-6.918583886910427
+kick_low_p39	-21.894899774989153
+kick_low_p40	34.98343271974423
+kick_low_p41	-31.85484292503788
+kick_low_p42	-78.15525441469849
+kick_low_p43	-42.91024410277828
+kick_low_p44	42.614344798213956
+kick_low_p45	60.433719370596265
+kick_low_p46	1.1543962046894674
+kick_low_p47	45.94616639322602
+kick_low_p48	-46.77723770608773
+kick_low_p49	24.281028283200676
+kick_low_p50	-53.29319758546143
+kick_low_p51	-27.59342009899658
+kick_low_p52	57.28696606703549
+kick_low_p53	43.13704825677722
+kick_low_p54	-44.59993296453745
+kick_low_p55	3.832650641016846
+kick_low_p56	68.7523367782065
+kick_low_p57	20.31971368943583
+kick_low_p58	34.01918620957536
+kick_low_p59	10.49736459947654
+kick_low_p60	-45.50704422960172
+kick_low_p61	34.68383012500375
+kick_low_p62	-28.024169410271682
+kick_low_p111	-34.12811408376535
+kick_low_p112	5.56882407466186
+kick_low_p113	52.71411857199749
+kick_low_p114	-1.7440459543379685
+kick_low_p115	-72.62536048681963
+kick_low_p116	6.768552960591114
+kick_low_p117	9.679673260547204
+kick_low_p118	5.772825813593425
+kick_low_p119	9.951259235727095
+kick_low_p120	-7.072330969029302
+kick_low_p121	19.29012786700192
+kick_low_p122	-56.44853651911485
+kick_low_p63	-44.568469677653816
+kick_low_p64	-34.611897598324944
+kick_low_p65	59.84333790461338
+kick_low_p66	22.790191227378035
+kick_low_p67	28.913331138261977
+kick_low_p68	60.74191560410807
+kick_low_p69	35.33086042596889
+kick_low_p70	-1.324567665721473
+kick_low_p71	-6.103357315187379
+kick_low_p72	-35.4560439300117
+kick_low_p73	16.291028483610543
+kick_low_p74	36.95343242808071
+kick_low_p123	-0.33057956874526306
+kick_low_p124	62.414268532319234
+kick_low_p125	1.6173964222030373
+kick_low_p126	10.73282494923273
+kick_low_p127	47.83983420152899
+kick_low_p128	31.626625732771156
+kick_low_p129	-46.13967582053204
+kick_low_p130	-9.751222288781907
+kick_low_p131	-21.768057774519868
+kick_low_p132	-50.274802874632286
+kick_low_p133	22.16250449541744
+kick_low_p134	-4.124697577353883
+kick_low_p135	-30.80860164375769
+kick_low_p136	-12.742400942250757
+kick_low_p137	-16.00187286925059
+kick_low_p138	-7.913277405728449
+kick_low_p139	77.5808359090791
+kick_low_p140	38.60845158523152
+kick_low_p141	0
+kick_low_p142	0
+kick_low_p143	0
+kick_low_p144	0
+kick_low_p145	0
+kick_low_p146	0
+kick_low_p147	0
+kick_low_p148	0
+kick_low_p149	0
+kick_low_p150	0
+kick_low_p151	0
+kick_low_p152	0
+kick_low_xoffset	-0.17731807956444032
+kick_low_yoffset	0.02678133776776198
+kick_low_max_displacement_right	0.01
+kick_low_max_displacement_left	0.01
+kick_low_max_displacement_top	0.01
+kick_low_max_displacement_bottom	0.01
+kick_low_cw_angle_thresh	5.917288207234568
+kick_low_ccw_angle_thresh	-0.7294214900089827
+kick_low_angle	0
+
+
+
+#######################
+### TONGDA KICK 12M   ###
+#######################
+tongda_kick_12m_p1	512.4147112545439
+tongda_kick_12m_p2	-2.6331736850530434
+tongda_kick_12m_p3	-106.68226549378653
+tongda_kick_12m_p4	-67.49014281954298
+tongda_kick_12m_p5	-16.004448860868493
+tongda_kick_12m_p6	-0.20669318785556023
+tongda_kick_12m_p7	-243.83903947432628
+tongda_kick_12m_p8	166.1080034310327
+tongda_kick_12m_p9	0.01656844769372743
+tongda_kick_12m_p10	5781.377914351427
+tongda_kick_12m_p11	1473.8095469926207
+tongda_kick_12m_p12	-3.9259576052588527
+tongda_kick_12m_p13	-263.15576548643605
+tongda_kick_12m_p14	147.31935318599733
+tongda_kick_12m_p15	14.421881434042586
+tongda_kick_12m_p16	3.0218636097616876
+tongda_kick_12m_p17	43.77484538041812
+tongda_kick_12m_p18	-22.97251283989573
+tongda_kick_12m_p19	482.52817504761157
+tongda_kick_12m_p20	-0.17201167353338742
+tongda_kick_12m_p21	-529.2799998957864
+tongda_kick_12m_p22	778.5845968207923
+tongda_kick_12m_p23	-12.680365463412945
+tongda_kick_12m_p24	1351.3946497034533
+tongda_kick_12m_p25	-0.28212733565701353
+tongda_kick_12m_p26	-145.3386165806658
+tongda_kick_12m_p87	646.1021639368375
+tongda_kick_12m_p88	537.9057181013897
+tongda_kick_12m_p89	-60.60663632800362
+tongda_kick_12m_p90	0.04552699031420469
+tongda_kick_12m_p91	8.334195610200078
+tongda_kick_12m_p92	16.480249677142474
+tongda_kick_12m_p93	-477.1316599633616
+tongda_kick_12m_p94	84.95384503987636
+tongda_kick_12m_p95	-802.7472921015053
+tongda_kick_12m_p96	1051.1173695495504
+tongda_kick_12m_p97	4.5638801684115835
+tongda_kick_12m_p98	-0.23563667815304168
+tongda_kick_12m_p99	5.782010593425247
+tongda_kick_12m_p100	0.6071962022718776
+tongda_kick_12m_p101	-597.2213796330186
+tongda_kick_12m_p102	-45.010954740071256
+tongda_kick_12m_p103	-687.077292748647
+tongda_kick_12m_p104	100.96783115069003
+tongda_kick_12m_p105	1631.9799491872
+tongda_kick_12m_p106	527.4220442279552
+tongda_kick_12m_p107	-185.39566411581876
+tongda_kick_12m_p108	-132.66690925335598
+tongda_kick_12m_p109	1441.050885002418
+tongda_kick_12m_p110	-112.51310316799255
+tongda_kick_12m_p27	614.7220352740658
+tongda_kick_12m_p28	-0.8885247174764106
+tongda_kick_12m_p29	-36.7813338951872
+tongda_kick_12m_p30	-45.96810647820749
+tongda_kick_12m_p31	-45.537610199251866
+tongda_kick_12m_p32	-121.92833208821052
+tongda_kick_12m_p33	1428.5251528730525
+tongda_kick_12m_p34	47.81018597407349
+tongda_kick_12m_p35	-83.99127690150819
+tongda_kick_12m_p36	33.84916189611921
+tongda_kick_12m_p37	-102.5577138341129
+tongda_kick_12m_p38	-126.09177522767123
+tongda_kick_12m_p39	28.852516729023808
+tongda_kick_12m_p40	287.31280767554796
+tongda_kick_12m_p41	33.35407051895393
+tongda_kick_12m_p42	183.7187106487549
+tongda_kick_12m_p43	-654.0142349849416
+tongda_kick_12m_p44	240.31666252526844
+tongda_kick_12m_p45	1960.8105277284271
+tongda_kick_12m_p46	-198.18988750462034
+tongda_kick_12m_p47	-1285.1384485354376
+tongda_kick_12m_p48	-878.9277701506069
+tongda_kick_12m_p49	-190.24031136261297
+tongda_kick_12m_p50	-180.35783116010916
+tongda_kick_12m_p51	427.5440420799583
+tongda_kick_12m_p52	1432.0575709328155
+tongda_kick_12m_p53	1167.0756350032523
+tongda_kick_12m_p54	-969.3791684158084
+tongda_kick_12m_p55	389.2794400621009
+tongda_kick_12m_p56	67.60474191720989
+tongda_kick_12m_p57	-179.14356799129746
+tongda_kick_12m_p58	93.03128738628891
+tongda_kick_12m_p59	-0.015071473699735062
+tongda_kick_12m_p60	-578.5632997449227
+tongda_kick_12m_p61	-64.85918836203473
+tongda_kick_12m_p62	-49.607184984895575
+tongda_kick_12m_p111	-526.345295280145
+tongda_kick_12m_p112	0.2577676117712975
+tongda_kick_12m_p113	30.486217754800016
+tongda_kick_12m_p114	324.48743830038495
+tongda_kick_12m_p115	-204.71601530730175
+tongda_kick_12m_p116	70.80004090113846
+tongda_kick_12m_p117	58.205443439359755
+tongda_kick_12m_p118	525.5288801143314
+tongda_kick_12m_p119	0.8860854100410105
+tongda_kick_12m_p120	13.59148341647526
+tongda_kick_12m_p121	1.2139814024767448
+tongda_kick_12m_p122	-83.49671574157674
+tongda_kick_12m_p63	-1154.7061980932663
+tongda_kick_12m_p64	-2313.6543383988487
+tongda_kick_12m_p65	66.96641461671297
+tongda_kick_12m_p66	537.8479491657919
+tongda_kick_12m_p67	1051.0025838734516
+tongda_kick_12m_p68	310.08322062142014
+tongda_kick_12m_p69	33.66993962588349
+tongda_kick_12m_p70	-69.20204578645101
+tongda_kick_12m_p71	-5.556035009336366
+tongda_kick_12m_p72	23.28533554807432
+tongda_kick_12m_p73	-1024.7859730463908
+tongda_kick_12m_p74	124.20228720118854
+tongda_kick_12m_p123	-5.735433391511969E-4
+tongda_kick_12m_p124	-22.89779492933809
+tongda_kick_12m_p125	-13.5016039950206
+tongda_kick_12m_p126	10.435102766943173
+tongda_kick_12m_p127	54.25762225125998
+tongda_kick_12m_p128	-51.17889406704413
+tongda_kick_12m_p129	49.14740877768298
+tongda_kick_12m_p130	-703.5194574266682
+tongda_kick_12m_p131	0.48272022662317243
+tongda_kick_12m_p132	-229.83410685965777
+tongda_kick_12m_p133	-0.012413373486675105
+tongda_kick_12m_p134	-0.3215453050599427
+tongda_kick_12m_p135	-1.1595263196421088
+tongda_kick_12m_p136	11.618731898941986
+tongda_kick_12m_p137	-6.897279882209871
+tongda_kick_12m_p138	0.16539298943311098
+tongda_kick_12m_p139	162.10844642541787
+tongda_kick_12m_p140	252.0551109550492
+tongda_kick_12m_p141	0
+tongda_kick_12m_p142	0
+tongda_kick_12m_p143	0
+tongda_kick_12m_p144	0
+tongda_kick_12m_p145	0
+tongda_kick_12m_p146	0
+tongda_kick_12m_p147	0
+tongda_kick_12m_p148	0
+tongda_kick_12m_p149	0
+tongda_kick_12m_p150	0
+tongda_kick_12m_p151	0
+tongda_kick_12m_p152	0
+tongda_kick_12m_max_displacement_right	0.01
+tongda_kick_12m_max_displacement_left	0.01
+tongda_kick_12m_max_displacement_top	0.01
+tongda_kick_12m_max_displacement_bottom	0.01
+tongda_kick_12m_xoffset	-0.1685271063464735
+tongda_kick_12m_yoffset	0.00500161167332473
+tongda_kick_12m_cw_angle_thresh	1.6629141934709755
+tongda_kick_12m_ccw_angle_thresh	-3.947091920903613
+tongda_kick_12m_angle	7.346111907001851
+
+
+block_new_p1		0
+block_new_p2		0
+block_new_p3		0
+block_new_p4		0
+block_new_p5		0
+block_new_p6		0
+block_new_p7		0
+block_new_p8		0
+block_new_p9		0
+block_new_p10		0
+block_new_p11		0
+block_new_p12		0
+block_new_p13		0
+block_new_p14		0
+block_new_p15		0
+block_new_p16		0
+block_new_p17		0
+block_new_p18		0
+block_new_p19		0
+block_new_p20		0
+block_new_p21		0
+block_new_p22		0
+block_new_p23		0
+block_new_p24		0
+block_new_p25		0
+block_new_p26		0
+block_new_p27		0
+block_new_p28		0
+block_new_p29		0
+block_new_p30		0
+block_new_p31		0
+block_new_p32		0
+block_new_p33		0
+block_new_p34		0
+block_new_p35		0
+block_new_p36		0
+block_new_p37		0
+block_new_p38		0
+block_new_p39		0
+block_new_p40		0
+block_new_p41		0
+block_new_p42		0
+block_new_p43		0
+block_new_p44		0
+block_new_p45		0
+block_new_p46		0
+block_new_p47		0
+block_new_p48		0
+block_new_p49		0
+block_new_p50		0
+block_new_p51		0
+block_new_p52		0
+block_new_p53		0
+block_new_p54		0
+block_new_p55		0
+block_new_p56		0
+block_new_p57		0
+block_new_p58		0
+block_new_p59		0
+block_new_p60		0
+block_new_p61		0
+block_new_p62		0
+block_new_p63		0
+block_new_p64		0
+block_new_p65		0
+block_new_p66		0
+block_new_wait1	0.4738562585043641
+block_new_wait2	3.0879199123000975
+block_new_wait3	-2.0670449910226227
+
+
+
+
+##########################
+### IK KICK PARAMETERS ###
+##########################
+
+kick_ik_0_xoffset	-0.18184725746865413
+kick_ik_0_yoffset	-0.007990019340567048
+kick_ik_0_x0			0.09855534262963274
+kick_ik_0_y0			0.04897226608420107
+kick_ik_0_z0			0.06004895070570849
+kick_ik_0_x1			-0.13267256199213984
+kick_ik_0_y1			0.15055665409986765
+kick_ik_0_z1			0.3048635084962904
+kick_ik_0_x2			-0.075918848350498
+kick_ik_0_y2			0.010843367764323163
+kick_ik_0_z2			-0.03228058151402973
+kick_ik_0_x3			0.3514121512894722
+kick_ik_0_y3			-0.0915098467211551
+kick_ik_0_z3			0.2932735025335922
+kick_ik_0_a0			-2.0713675817098482
+kick_ik_0_b0			4.168030311789961
+kick_ik_0_c0			-0.17712625804502546
+kick_ik_0_a1			-2.3258316746549554
+kick_ik_0_b1			9.39335694003392
+kick_ik_0_c1			-5.4878969788579175
+kick_ik_0_a2			2.254184572289742
+kick_ik_0_b2			0.014404161833793745
+kick_ik_0_c2			-16.34929405684522
+kick_ik_0_a3			-0.1703513663364682
+kick_ik_0_b3			77.12670393386878
+kick_ik_0_c3			-21.212384580007893
+kick_ik_0_wait			0.06679452466769868
+kick_ik_0_scale			2.434596016520202
+kick_ik_0_off3_0		6.8002354818317885
+kick_ik_0_off4_0		23.957167469656504
+kick_ik_0_off5_0		-7.433399813693172
+kick_ik_0_off3_1		-16.624470935986754
+kick_ik_0_off4_1		20.351676522363075
+kick_ik_0_off5_1		-25.63678390762887
+kick_ik_0_off3_2		-50.00201321637502
+kick_ik_0_off4_2		-39.33897746613399
+kick_ik_0_off5_2		54.047464010320134
+
+kick_ik_0_max_displacement_right	0.025
+kick_ik_0_max_displacement_left	0.025
+kick_ik_0_max_displacement_top	0.025
+kick_ik_0_max_displacement_bottom	0.025
+kick_ik_0_cw_angle_thresh	2
+kick_ik_0_ccw_angle_thresh	2
+kick_ik_0_angle			0
+
+# default getup off back params
+getup_parms_stateUpInitialWait	0.5
+getup_parms_stateUp3A1	-120.0
+getup_parms_stateUp3A2	35.0
+getup_parms_stateUp3A4	60.0
+getup_parms_stateUp3L3	15.0
+getup_parms_stateUp3MinTime	0.2
+getup_parms_stateUp5L3	110.0
+getup_parms_stateUp5MinTime	0.04
+getup_parms_stateUp7L1	-35.0
+getup_parms_stateUp7MinTime	0.2
+getup_parms_stateUp9A1	30.0
+getup_parms_stateUp9L1	-80.0
+getup_parms_stateUp9L4	-60.0
+getup_parms_stateUp9L5	-70.0
+getup_parms_stateUp9L6	-40.0
+getup_parms_stateUp9MinTime	0.2
+getup_parms_stateUp11A1	30.0
+getup_parms_stateUp11L1	-60.0 
+getup_parms_stateUp11L5	-80.0
+getup_parms_stateUp11MinTime	0.4
+getup_parms_stateUp13A1	-90.0
+getup_parms_stateUp13L1	-30.0
+getup_parms_stateUp13L3	30.0
+getup_parms_stateUp13L4	-10.0 
+getup_parms_stateUp13L5	-10.0
+getup_parms_stateUp13MinTime	0.04 
+getup_parms_stateUp15MinTime	0.6
+
+# Block params
+block_new_p1		0
+block_new_p2		0
+block_new_p3		0
+block_new_p4		0
+block_new_p5		0
+block_new_p6		0
+block_new_p7		0
+block_new_p8		0
+block_new_p9		0
+block_new_p10		0
+block_new_p11		0
+block_new_p12		0
+block_new_p13		0
+block_new_p14		0
+block_new_p15		0
+block_new_p16		0
+block_new_p17		0
+block_new_p18		0
+block_new_p19		0
+block_new_p20		0
+block_new_p21		0
+block_new_p22		0
+block_new_p23		0
+block_new_p24		0
+block_new_p25		0
+block_new_p26		0
+block_new_p27		0
+block_new_p28		0
+block_new_p29		0
+block_new_p30		0
+block_new_p31		0
+block_new_p32		0
+block_new_p33		0
+block_new_p34		0
+block_new_p35		0
+block_new_p36		0
+block_new_p37		0
+block_new_p38		0
+block_new_p39		0
+block_new_p40		0
+block_new_p41		0
+block_new_p42		0
+block_new_p43		0
+block_new_p44		0
+block_new_p45		0
+block_new_p46		0
+block_new_p47		0
+block_new_p48		0
+block_new_p49		0
+block_new_p50		0
+block_new_p51		0
+block_new_p52		0
+block_new_p53		0
+block_new_p54		0
+block_new_p55		0
+block_new_p56		0
+block_new_p57		0
+block_new_p58		0
+block_new_p59		0
+block_new_p60		0
+block_new_p61		0
+block_new_p62		0
+block_new_p63		0
+block_new_p64		0
+block_new_p65		0
+block_new_p66		0
+block_new_wait1	0.4738562585043641
+block_new_wait2	3.0879199123000975
+block_new_wait3	-2.0670449910226227
+
+block_p1		0
+block_p2		0
+block_p3		0
+block_p4		0
+block_p5		0
+block_p6		0
+block_p7		0
+block_p8		0
+block_p9		0
+block_p10		0
+block_p11		0
+block_p12		0
+block_p13		0
+block_p14		0
+block_p15		0
+block_p16		0
+block_p17		0
+block_p18		0
+block_p19		0
+block_p20		0
+block_p21		0
+block_p22		0
+block_p23		0
+block_p24		0
+block_p25		0
+block_p26		0
+block_p27		0
+block_p28		0
+block_p29		0
+block_p30		0
+block_p31		0
+block_p32		0
+block_p33		0
+block_p34		0
+block_p35		0
+block_p36		0
+block_p37		0
+block_p38		0
+block_p39		0
+block_p40		0
+block_p41		0
+block_p42		0
+block_p43		0
+block_p44		0
+block_p45		0
+block_p46		0
+block_p47		0
+block_p48		0
+block_p49		0
+block_p50		0
+block_p51		0
+block_p52		0
+block_p53		0
+block_p54		0
+block_p55		0
+block_p56		0
+block_wait1	-170.48196786551665
+block_wait2	-38.86187737558309
+block_wait3	-47.12436255224786
+block_wait4	-89.31692357488569
+block_wait5	-164.65008493928178
+block_wait6	-89.75303454922548
+block_wait7	-126.78311958144701
+block_wait8	-161.46602258221796
+block_wait9	-175.9972801167197
+block_wait10	-177.67808621321433

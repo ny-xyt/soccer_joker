@@ -1,0 +1,4 @@
+TD3drobo 3D Simulation Team Base Code
+connecting to TCP localhost:3100
+Loading rsg: (scene rsg/agent/nao/nao_hetero.rsg 1)
+closed connection to localhost:3100

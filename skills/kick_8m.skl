@@ -1,0 +1,98 @@
+# Time is in seconds.
+# Angles are in degrees.
+
+STARTSKILL SKILL_KICK_8M_LEFT_LEG
+
+
+# State 0
+STARTSTATE
+settar EFF_LL1 (0+$kick_8m_p141) EFF_LL2 (0.8+$kick_8m_p142) EFF_LL3 (23+$kick_8m_p143) EFF_LL4 (-70+$kick_8m_p144) EFF_LL5 (42+$kick_8m_p145) EFF_LL6 (-0.8+$kick_8m_p146) end
+settar EFF_RL1 (0+$kick_8m_p147) EFF_RL2 (0.8+$kick_8m_p148) EFF_RL3 (23+$kick_8m_p149) EFF_RL4 (-70+$kick_8m_p150) EFF_RL5 (42+$kick_8m_p151) EFF_RL6 (-0.8+$kick_8m_p152) end
+wait 0.5 end
+ENDSTATE
+
+# State 0  300
+STARTSTATE
+settar EFF_LL1 (0+$kick_8m_p1) EFF_LL2 (10+$kick_8m_p2) EFF_LL3 (37.0+$kick_8m_p3) EFF_LL4 (-70.0+$kick_8m_p4) EFF_LL5 (38.0+$kick_8m_p5) EFF_LL6 (-10+$kick_8m_p6) EFF_LL7 (0+$kick_8m_p123) end
+settar EFF_RL1 (0+$kick_8m_p7) EFF_RL2 (10+$kick_8m_p8) EFF_RL3 (37.0+$kick_8m_p9) EFF_RL4 (-70.0+$kick_8m_p10) EFF_RL5 (38.0+$kick_8m_p11) EFF_RL6 (-10+$kick_8m_p12) EFF_RL7 (0+$kick_8m_p124) end
+wait 0.02 end
+ENDSTATE
+
+
+# State 1.0 308
+STARTSTATE
+settar EFF_LL3 (50+$kick_8m_p13) EFF_LL4 (-88+$kick_8m_p14) end
+wait 0.02 end
+ENDSTATE
+
+# State 2.0 313
+STARTSTATE
+settar EFF_LL1 (0.7+$kick_8m_p15) EFF_LL2 (-2+$kick_8m_p16) EFF_LL3 (64+$kick_8m_p17) EFF_LL4 (-105+$kick_8m_p18) EFF_LL5 (5+$kick_8m_p19) EFF_LL6 (-4+$kick_8m_p20) EFF_LL7 (0+$kick_8m_p125) end
+settar EFF_RL1 (-30+$kick_8m_p21) EFF_RL2 (11+$kick_8m_p22) EFF_RL3 (15+$kick_8m_p23) EFF_RL4 (-41+$kick_8m_p24) EFF_RL5 (22+$kick_8m_p25) EFF_RL6 (-16+$kick_8m_p26) EFF_RL7 (0+$kick_8m_p126) end
+wait 0.05 end
+ENDSTATE
+
+# State 2.0 317
+STARTSTATE
+settar EFF_LL1 (1.5+$kick_8m_p87) EFF_LL2 (-9+$kick_8m_p88) EFF_LL3 (38+$kick_8m_p89) EFF_LL4 (-115+$kick_8m_p90) EFF_LL5 (-11+$kick_8m_p91) EFF_LL6 (-1+$kick_8m_p92) EFF_LL7 (0+$kick_8m_p127) end
+settar EFF_RL1 (-48+$kick_8m_p93) EFF_RL2 (11+$kick_8m_p94) EFF_RL3 (7+$kick_8m_p95) EFF_RL4 (-26+$kick_8m_p96) EFF_RL5 (15+$kick_8m_p97) EFF_RL6 (-20+$kick_8m_p98) EFF_RL7 (0+$kick_8m_p128) end
+wait 0.05 end
+#wait 0.1 end
+ENDSTATE
+
+# State 3.0 322
+STARTSTATE
+settar EFF_LL1 (1+$kick_8m_p99) EFF_LL2 (-13+$kick_8m_p100) EFF_LL3 (15+$kick_8m_p101) EFF_LL4 (-115+$kick_8m_p102) EFF_LL5 (-24+$kick_8m_p103) EFF_LL6 (2+$kick_8m_p104) EFF_LL7 (0+$kick_8m_p129) end
+settar EFF_RL1 (-56+$kick_8m_p105) EFF_RL2 (12+$kick_8m_p106) EFF_RL3 (1.6+$kick_8m_p107) EFF_RL4 (-15+$kick_8m_p108) EFF_RL5 (9+$kick_8m_p109) EFF_RL6 (-21+$kick_8m_p110) EFF_RL7 (0+$kick_8m_p130) end
+wait 0.05 end
+ENDSTATE
+
+# State 3.0 327
+STARTSTATE
+settar EFF_LL1 (1+$kick_8m_p27) EFF_LL2 (-18+$kick_8m_p28) EFF_LL3 (-8+$kick_8m_p29) EFF_LL4 (-124+$kick_8m_p30) EFF_LL5 (-36+$kick_8m_p31) EFF_LL6 (4+$kick_8m_p32) EFF_LL7 (0+$kick_8m_p131) end
+settar EFF_RL1 (-56+$kick_8m_p33) EFF_RL2 (13+$kick_8m_p34) EFF_RL3 (-3+$kick_8m_p35) EFF_RL4 (-5.5+$kick_8m_p36) EFF_RL5 (4+$kick_8m_p37) EFF_RL6 (-23+$kick_8m_p38) EFF_RL7 (0+$kick_8m_p132) end
+wait 0.05 end
+ENDSTATE
+
+# State 4.0 330
+STARTSTATE
+settar EFF_LL1 (1+$kick_8m_p39) EFF_LL2 (-19+$kick_8m_p40) EFF_LL3 (13+$kick_8m_p41) EFF_LL4 (-110+$kick_8m_p42) EFF_LL5 (-40+$kick_8m_p43) EFF_LL6 (5+$kick_8m_p44) EFF_LL7 (0+$kick_8m_p133) end
+settar EFF_RL1 (-54+$kick_8m_p45) EFF_RL2 (13+$kick_8m_p46) EFF_RL3 (2.8+$kick_8m_p47) EFF_RL4 (-24+$kick_8m_p48) EFF_RL5 (-6+$kick_8m_p49) EFF_RL6 (-24+$kick_8m_p50) EFF_RL7 (0+$kick_8m_p134) end
+wait 0.03 end
+ENDSTATE
+
+# State 5.0 333
+STARTSTATE
+settar EFF_LL1 (-20+$kick_8m_p51) EFF_LL2 (-22+$kick_8m_p52) EFF_LL3 (34+$kick_8m_p53) EFF_LL4 (-100+$kick_8m_p54) EFF_LL5 (-43+$kick_8m_p55) EFF_LL6 (14+$kick_8m_p56) EFF_LL7 (0+$kick_8m_p135) end
+settar EFF_RL1 (-33+$kick_8m_p57) EFF_RL2 (14+$kick_8m_p58) EFF_RL3 (-7.5+$kick_8m_p59) EFF_RL4 (-45+$kick_8m_p60) EFF_RL5 (-25+$kick_8m_p61) EFF_RL6 (-25+$kick_8m_p62) EFF_RL7 (0+$kick_8m_p136) end
+wait 0.03 end
+ENDSTATE
+
+# State 5.0 338
+STARTSTATE
+settar EFF_LL1 (-55+$kick_8m_p111) EFF_LL2 (-24+$kick_8m_p112) EFF_LL3 (65+$kick_8m_p113) EFF_LL4 (-100+$kick_8m_p114) EFF_LL5 (-16+$kick_8m_p115) EFF_LL6 (21+$kick_8m_p116) EFF_LL7 (0+$kick_8m_p137) end
+settar EFF_RL1 (-10+$kick_8m_p117) EFF_RL2 (15+$kick_8m_p118) EFF_RL3 (-20+$kick_8m_p119) EFF_RL4 (-80+$kick_8m_p120) EFF_RL5 (-39+$kick_8m_p121) EFF_RL6 (-25+$kick_8m_p122) EFF_RL7 (0+$kick_8m_p138) end
+wait 0.03 end
+ENDSTATE
+
+# State 6.0 342
+STARTSTATE
+settar EFF_LL1 (-74+$kick_8m_p63) EFF_LL2 (-24+$kick_8m_p64) EFF_LL3 (30+$kick_8m_p65) EFF_LL4 (-90+$kick_8m_p66) EFF_LL5 (-8+$kick_8m_p67) EFF_LL6 (24+$kick_8m_p68) EFF_LL7 (0+$kick_8m_p139) end
+settar EFF_RL1 (-3+$kick_8m_p69) EFF_RL2 (15+$kick_8m_p70) EFF_RL3 (-23+$kick_8m_p71) EFF_RL4 (-90+$kick_8m_p72) EFF_RL5 (-43+$kick_8m_p73) EFF_RL6 (-25+$kick_8m_p74) EFF_RL7 (0+$kick_8m_p140) end
+wait 0.03 end
+ENDSTATE
+
+# State 8
+STARTSTATE
+reset LEG_LEFT LEG_RIGHT end
+wait 0.8 end
+ENDSTATE
+
+
+ENDSKILL 
+
+REFLECTSKILL SKILL_KICK_8M_LEFT_LEG SKILL_KICK_8M_RIGHT_LEG
+  
+
+
+

@@ -1,0 +1,33 @@
+# Time is in seconds.
+# Angles are in degrees.
+
+STARTSKILL SKILL_BLOCK_SIDE_LEFT
+
+# State 0
+STARTSTATE
+settar EFF_LA1 (87+$block_new_p1) EFF_LA2 (45+$block_new_p2) EFF_LA3 (0+$block_new_p3) EFF_LA4 (0+$block_new_p4) EFF_LL1 (0+$block_new_p5) EFF_LL2 (-25+$block_new_p6) EFF_LL3 (0+$block_new_p7) EFF_LL4 (0+$block_new_p8) EFF_LL5 (0+$block_new_p9) EFF_LL6 (45+$block_new_p10) EFF_LL7 (0+$block_new_p11) end
+settar EFF_RA1 (87+$block_new_p12) EFF_RA2 (0+$block_new_p13) EFF_RA3 (0+$block_new_p14) EFF_RA4 (0+$block_new_p15) EFF_RL1 (0+$block_new_p16) EFF_RL2 (0+$block_new_p17) EFF_RL3 (0+$block_new_p18) EFF_RL4 (0+$block_new_p19) EFF_RL5 (0+$block_new_p20) EFF_RL6 (45+$block_new_p21) EFF_RL7 (0++$block_new_p22) end
+wait (0.1+$block_new_wait1) end
+ENDSTATE
+
+# State 1
+#STARTSTATE
+#settar EFF_LA1 (87+$block_new_p23) EFF_LA2 (20+$block_new_p24) EFF_LA3 (0+$block_new_p25) EFF_LA4 (-20++$block_new_p26) EFF_LL1 (0+$block_new_p27) EFF_LL2 (-25+$block_new_p28) EFF_LL3 (0+$block_new_p29) EFF_LL4 (0+$block_new_p30) EFF_LL5 (0+$block_new_p31) EFF_LL6 (45+$block_new_p32) EFF_LL7 (0+$block_new_p33) end
+#settar EFF_RA1 (87+$block_new_p34) EFF_RA2 (0+$block_new_p35) EFF_RA3 (0+$block_new_p36) EFF_RA4 (0+$block_new_p37) EFF_RL1 (0+$block_new_p38) EFF_RL2 (0+$block_new_p39) EFF_RL3 (0+$block_new_p40) EFF_RL4 (0+$block_new_p41) EFF_RL5 (0+$block_new_p42) EFF_RL6 (45+$block_new_p43) EFF_RL7 (0+$block_new_p44) end
+#wait (0.2+$block_new_wait2) end
+#ENDSTATE
+
+# State 2
+STARTSTATE
+settar EFF_LA1 (87+$block_new_p45) EFF_LA2 (0+$block_new_p46) EFF_LA3 (0+$block_new_p47) EFF_LA4 (-30+$block_new_p48) EFF_LL1 (0++$block_new_p49) EFF_LL2 (-20++$block_new_p50) EFF_LL3 (0+$block_new_p51) EFF_LL4 (0+$block_new_p52) EFF_LL5 (0+$block_new_p53) EFF_LL6 (0++$block_new_p54) EFF_LL7 (0+$block_new_p55) end
+settar EFF_RA1 (87+$block_new_p56) EFF_RA2 (0+$block_new_p57) EFF_RA3 (0+$block_new_p58) EFF_RA4 (0+$block_new_p59) EFF_RL1 (0+$block_new_p60) EFF_RL2 (0+$block_new_p61) EFF_RL3 (0+$block_new_p62) EFF_RL4 (0+$block_new_p63) EFF_RL5 (0+$block_new_p64) EFF_RL6 (0+$block_new_p65) EFF_RL7 (0+$block_new_p66) end
+wait (1.0+$block_new_wait3) end
+ENDSTATE
+
+
+
+ENDSKILL  
+
+REFLECTSKILL SKILL_BLOCK_SIDE_LEFT SKILL_BLOCK_SIDE_RIGHT
+
+

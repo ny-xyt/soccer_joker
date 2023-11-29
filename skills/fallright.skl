@@ -1,0 +1,25 @@
+# Time is in seconds.
+# Angles are in degrees.
+
+STARTSKILL FALL_RIGHT
+
+# State 0
+STARTSTATE
+reset ARM_LEFT ARM_RIGHT LEG_LEFT LEG_RIGHT end
+inctar EFF_LA1 90 EFF_RA1 90 end
+setscale EFF_LA1 100 EFF_RA1 100 end
+wait 0.4 end
+ENDSTATE
+
+# State 1
+STARTSTATE
+reset LEG_LEFT LEG_RIGHT end
+inctar EFF_LL3 19 EFF_LL4 -40 EFF_LL5 20 EFF_RL2 40 EFF_RL3 19 EFF_RL4 -50 EFF_RL5 20 end
+wait 2 end
+ENDSTATE
+
+
+
+ENDSKILL 
+
+REFLECTSKILL FALL_RIGHT FALL_LEFT
