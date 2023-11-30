@@ -898,12 +898,12 @@ double ballAngle = atan2Deg(ballRelative.getY(), ballRelative.getX());
              return SKILL_BLOCK_SIDE_LEFT;
         } else if (ballY < goaliePosition.getY()) {
             // 球从右侧射来，执行右扑救动作
-             //std::cout << "右扑救"<< std::endl;
+            // std::cout << "右扑救"<< std::endl;
             return SKILL_BLOCK_SIDE_RIGHT;
              // return  SKILL_BLOCK_LEFT;
         }
         else{
-             //std::cout << "茶腿"<< std::endl;
+            // std::cout << "茶腿"<< std::endl;
             return  SKILL_BLOCK_LEFT;
         }
     }
