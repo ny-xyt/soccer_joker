@@ -1266,7 +1266,7 @@ utwalk/memory/MemoryBlock.cpp.o:
 .PHONY : utwalk/memory/MemoryBlock.cpp.o
 
 utwalk/memory/MemoryBlock.i: utwalk/memory/MemoryBlock.cpp.i
-.PHONY : utwalk/memory/MemoryBlock.i
+.PHONY : utwalk/memory/Memory.i
 
 # target to preprocess a source file
 utwalk/memory/MemoryBlock.cpp.i:

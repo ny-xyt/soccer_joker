@@ -1,4 +1,4 @@
-# Install script for directory: /home/xyt/joker start/dj/New stbr
+# Install script for directory: /home/xyt/joker start/dj/New stbr1.5
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/xyt/joker start/dj/New stbr/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/xyt/joker start/dj/New stbr1.5/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

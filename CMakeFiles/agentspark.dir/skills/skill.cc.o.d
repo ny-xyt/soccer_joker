@@ -1,5 +1,5 @@
 CMakeFiles/agentspark.dir/skills/skill.cc.o: \
- /home/xyt/joker\ start/dj/New\ stbr/skills/skill.cc \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/skill.cc \
  /usr/include/stdc-predef.h /home/xyt/anaconda3/include/boost/foreach.hpp \
  /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -389,7 +389,7 @@ CMakeFiles/agentspark.dir/skills/skill.cc.o: \
  /home/xyt/anaconda3/include/boost/type_traits/is_base_and_derived.hpp \
  /home/xyt/anaconda3/include/boost/utility/addressof.hpp \
  /home/xyt/anaconda3/include/boost/foreach_fwd.hpp \
- /home/xyt/joker\ start/dj/New\ stbr/skills/skill.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/skill.h \
  /home/xyt/anaconda3/include/boost/shared_ptr.hpp \
  /home/xyt/anaconda3/include/boost/smart_ptr/shared_ptr.hpp \
  /home/xyt/anaconda3/include/boost/config/no_tr1/memory.hpp \
@@ -442,8 +442,8 @@ CMakeFiles/agentspark.dir/skills/skill.cc.o: \
  /home/xyt/anaconda3/include/boost/smart_ptr/detail/operator_bool.hpp \
  /home/xyt/anaconda3/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
  /home/xyt/anaconda3/include/boost/smart_ptr/detail/local_counted_base.hpp \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/bodymodel.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../headers/headers.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/bodymodel.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../headers/headers.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
@@ -461,7 +461,7 @@ CMakeFiles/agentspark.dir/skills/skill.cc.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/sstream \
  /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../math/vecposition.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../math/vecposition.h \
  /usr/include/c++/11/math.h /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -473,15 +473,15 @@ CMakeFiles/agentspark.dir/skills/skill.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/c++/11/iostream \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../math/../headers/headers.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../math/hctmatrix.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../math/vecposition.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../worldmodel/worldmodel.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../worldmodel/../headers/headers.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../worldmodel/../math/Geometry.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../worldmodel/../math/vecposition.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../worldmodel/../math/hctmatrix.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../worldmodel/WorldObject.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../math/../headers/headers.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../math/hctmatrix.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../math/vecposition.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../worldmodel/worldmodel.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../worldmodel/../headers/headers.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../worldmodel/../math/Geometry.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../worldmodel/../math/vecposition.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../worldmodel/../math/hctmatrix.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../worldmodel/WorldObject.h \
  /home/xyt/anaconda3/include/boost/assign/list_of.hpp \
  /home/xyt/anaconda3/include/boost/assign/assignment_exception.hpp \
  /home/xyt/anaconda3/include/boost/range/iterator_range.hpp \
@@ -584,13 +584,13 @@ CMakeFiles/agentspark.dir/skills/skill.cc.o: \
  /home/xyt/anaconda3/include/boost/move/detail/type_traits.hpp \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../worldmodel/../math/vecposition.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../worldmodel/../parser/VisionObject.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../worldmodel/../parser/../math/vecposition.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../worldmodel/../headers/Field.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../worldmodel/../headers/../worldmodel/WorldObject.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../worldmodel/../headers/../math/Geometry.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../worldmodel/../rvdraw/rvdraw.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../worldmodel/../math/vecposition.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../worldmodel/../parser/VisionObject.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../worldmodel/../parser/../math/vecposition.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../worldmodel/../headers/Field.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../worldmodel/../headers/../worldmodel/WorldObject.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../worldmodel/../headers/../math/Geometry.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../worldmodel/../rvdraw/rvdraw.h \
  /usr/include/c++/11/cstring /usr/include/c++/11/stdlib.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -860,7 +860,7 @@ CMakeFiles/agentspark.dir/skills/skill.cc.o: \
  /home/xyt/anaconda3/include/boost/integer_fwd.hpp \
  /home/xyt/anaconda3/include/boost/detail/basic_pointerbuf.hpp \
  /usr/include/c++/11/iomanip \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../bodymodel/../ikfast/ikfast.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/curve3d.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../math/vecposition.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../ikfast/ikfast.h
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../bodymodel/../ikfast/ikfast.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/curve3d.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../math/vecposition.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../ikfast/ikfast.h

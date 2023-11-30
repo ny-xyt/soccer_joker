@@ -96,6 +96,29 @@ do
       ;;
   esac
 
+#   shift 1
+# done
+# opt="${opt} --host=${host} --port ${port} --team ${team} ${paramsfile_args} --mhost=${mhost}"
+
+# DIR="$( cd "$( dirname "$0" )" && pwd )" 
+# cd "$DIR"
+
+# for ((i=1;i<=$NUM_PLAYERS;i++)); do
+#     case $i in
+#         4|2|1|7)
+#             echo "Running agent No. $i -- Type 0"
+#             "$BINARY_DIR/$AGENT_BINARY" $opt --unum $i --type 0 --paramsfile paramfiles/defaultParams_t0.txt &
+#             ;;
+#         3|11|10)
+#             echo "Running agent No. $i -- Type 1"
+#             "$BINARY_DIR/$AGENT_BINARY" $opt --unum $i --type 1 --paramsfile paramfiles/defaultParams_t1.txt &
+#             ;;
+#         *)
+#             echo "Running agent No. $i -- Type 4"
+#             "$BINARY_DIR/$AGENT_BINARY" $opt --unum $i --type 4 --paramsfile paramfiles/defaultParams_t4.txt &
+#             ;;
+#     esac
+# done
   shift 1
 done
 opt="${opt} --host=${host} --port ${port} --team ${team} ${paramsfile_args} --mhost=${mhost}"
@@ -105,18 +128,18 @@ cd "$DIR"
 
 for ((i=1;i<=$NUM_PLAYERS;i++)); do
     case $i in
-        4|2|1|7)
+       1)
             echo "Running agent No. $i -- Type 0"
             "$BINARY_DIR/$AGENT_BINARY" $opt --unum $i --type 0 --paramsfile paramfiles/defaultParams_t0.txt &
             ;;
-        3|11|10)
-            echo "Running agent No. $i -- Type 1"
-            "$BINARY_DIR/$AGENT_BINARY" $opt --unum $i --type 1 --paramsfile paramfiles/defaultParams_t1.txt &
-            ;;
-        *)
-            echo "Running agent No. $i -- Type 4"
-            "$BINARY_DIR/$AGENT_BINARY" $opt --unum $i --type 4 --paramsfile paramfiles/defaultParams_t4.txt &
-            ;;
+        # )
+        #     echo "Running agent No. $i -- Type 1"
+        #     "$BINARY_DIR/$AGENT_BINARY" $opt --unum $i --type 1 --paramsfile paramfiles/defaultParams_t1.txt &
+        #     ;;
+        # )
+        #     echo "Running agent No. $i -- Type 4"
+        #     "$BINARY_DIR/$AGENT_BINARY" $opt --unum $i --type 4 --paramsfile paramfiles/defaultParams_t4.txt &
+        #     ;;
     esac
 done
 # opt="${opt} --host=${host} --port ${port} --team ${team} ${paramsfile_args} --mhost=${mhost}"

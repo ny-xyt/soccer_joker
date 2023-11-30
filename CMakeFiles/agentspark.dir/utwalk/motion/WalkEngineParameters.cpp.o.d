@@ -1,9 +1,9 @@
 CMakeFiles/agentspark.dir/utwalk/motion/WalkEngineParameters.cpp.o: \
- /home/xyt/joker\ start/dj/New\ stbr/utwalk/motion/WalkEngineParameters.cpp \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/utwalk/motion/WalkEngineParameters.cpp \
  /usr/include/stdc-predef.h \
- /home/xyt/joker\ start/dj/New\ stbr/utwalk/motion/WalkEngineParameters.h \
- /home/xyt/joker\ start/dj/New\ stbr/utwalk/math/Pose2D.h \
- /home/xyt/joker\ start/dj/New\ stbr/utwalk/math/Vector2.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/utwalk/motion/WalkEngineParameters.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/utwalk/math/Pose2D.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/utwalk/math/Vector2.h \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -164,10 +164,10 @@ CMakeFiles/agentspark.dir/utwalk/motion/WalkEngineParameters.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/xyt/joker\ start/dj/New\ stbr/utwalk/math/Range.h \
- /home/xyt/joker\ start/dj/New\ stbr/utwalk/math/Common.h \
- /home/xyt/joker\ start/dj/New\ stbr/utwalk/math/Vector3.h \
- /home/xyt/joker\ start/dj/New\ stbr/utwalk/math/Geometry.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/utwalk/math/Range.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/utwalk/math/Common.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/utwalk/math/Vector3.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/utwalk/math/Geometry.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/stl_map.h /usr/include/c++/11/tuple \

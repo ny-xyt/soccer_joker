@@ -1,7 +1,7 @@
 CMakeFiles/agentspark.dir/skills/curve3d.cc.o: \
- /home/xyt/joker\ start/dj/New\ stbr/skills/curve3d.cc \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/curve3d.cc \
  /usr/include/stdc-predef.h \
- /home/xyt/joker\ start/dj/New\ stbr/skills/curve3d.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/curve3d.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -43,7 +43,7 @@ CMakeFiles/agentspark.dir/skills/curve3d.cc.o: \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../math/vecposition.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../math/vecposition.h \
  /usr/include/c++/11/math.h /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -170,7 +170,7 @@ CMakeFiles/agentspark.dir/skills/curve3d.cc.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/xyt/joker\ start/dj/New\ stbr/skills/../math/../headers/headers.h \
+ /home/xyt/joker\ start/dj/New\ stbr1.5/skills/../math/../headers/headers.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/stl_map.h /usr/include/c++/11/tuple \

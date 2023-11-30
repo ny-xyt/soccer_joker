@@ -1337,29 +1337,7 @@ bool NaoBehavior::isOurTeammateWithBall()//有球权true
 
 
 
-//是否远射
-bool NaoBehavior::isBallMovingXDistancequickly() 
-{
-    static VecPosition lastBall = worldModel->getBallGroundTruth();
-    static double lastTime = worldModel->getTime();
 
-    double thisTime = worldModel->getTime();
-    VecPosition thisBall = worldModel->getBallGroundTruth();
-
-    thisBall.setZ(0);
-    lastBall.setZ(0);
-
-    if (abs(thisBall.getX() - lastBall.getX()) > 6) {
-        lastBall = thisBall;
-        lastTime = thisTime;
-    }
-
-    if (thisTime - lastTime < 0.5) {
-        return true;
-    } else {
-        return false;
-    }
-}
 void NaoBehavior::who_close_to_ball(){
     int OurplayerClosestToBall = -1;
     int OppplayerClosestToBall = -1;
@@ -1562,7 +1540,7 @@ SkillType NaoBehavior::cy_findball(Role role)
         if(posball.getX()>getRolePosition(role).getX()&&posball.getY()>getRolePosition(role).getY())
         {
             
-                    VecPosition target5 = VecPosition(VecPosition(posball.getX()-1, posball.getY()-1, 0));
+                    VecPosition target5 = VecPosition(VecPosition(posball.getX()-0.8, posball.getY()-0.5, 0));
 		             target5 = collisionAvoidance(true/*Avoid teamate*/,false/*Avoid opponent*/,false/*Avoid ball*/, .5, 1, target5, false /*fKeepDistance*/);
                     return goToTarget(target5);
 
@@ -1570,14 +1548,14 @@ SkillType NaoBehavior::cy_findball(Role role)
         if(posball.getX()<getRolePosition(role).getX()&&posball.getY()>getRolePosition(role).getY())
         {
           
-                    VecPosition target5 = VecPosition(VecPosition(posball.getX(), posball.getY()-0.8, 0));
+                    VecPosition target5 = VecPosition(VecPosition(posball.getX()-0.4, posball.getY()-0.7, 0));
 		            target5 = collisionAvoidance(true/*Avoid teamate*/,false/*Avoid opponent*/,false/*Avoid ball*/, .5, 1, target5, false /*fKeepDistance*/);
                     return goToTarget(target5);
             
         }
         if(posball.getX()<getRolePosition(role).getX()&&posball.getY()<getRolePosition(role).getY())
         {
-                VecPosition target5 = VecPosition(VecPosition(posball.getX(), posball.getY()+0.8, 0));
+                VecPosition target5 = VecPosition(VecPosition(posball.getX()-0.4, posball.getY()+0.7, 0));
 		            target5 = collisionAvoidance(true/*Avoid teamate*/,false/*Avoid opponent*/,false/*Avoid ball*/, .5, 1, target5, false /*fKeepDistance*/);
                     return goToTarget(target5);
           
@@ -1585,7 +1563,7 @@ SkillType NaoBehavior::cy_findball(Role role)
         if(posball.getX()>getRolePosition(role).getX()&&posball.getY()<getRolePosition(role).getY())
         {
             
-                    VecPosition target5 = VecPosition(VecPosition(posball.getX()-1, posball.getY()+1, 0));
+                    VecPosition target5 = VecPosition(VecPosition(posball.getX()-0.8, posball.getY()+0.5, 0));
 		            target5 = collisionAvoidance(true/*Avoid teamate*/,false/*Avoid opponent*/,false/*Avoid ball*/, .5, 1, target5, false /*fKeepDistance*/);
                     return goToTarget(target5);
       
@@ -1593,15 +1571,78 @@ SkillType NaoBehavior::cy_findball(Role role)
         }
 } 
 
-void NaoBehavior::faceBall() {
-    // 获取球相对于机器人的坐标
-    VecPosition ballRelative = worldModel->g2l(ball);
 
-    // 计算机器人需要转动的角度
-    double targetAngle = atan2Deg(ballRelative.getY(), ballRelative.getX());
+const double someTimeThreshold = 1.0; // 假设1秒为阈值
 
-    // 使用角度调整机器人的朝向
-   return goToTargetRelative(VecPosition(), targetAngle);
+bool NaoBehavior::isBallMovingQuickly() {
+    static VecPosition lastBall;
+    static double lastTime = worldModel->getTime();
+
+    VecPosition thisBall = worldModel->getBall();
+    double currentTime = worldModel->getTime();
+
+    double distanceCovered = distanceBetweenPoints(thisBall, lastBall);
+    double timeElapsed = currentTime - lastTime;
+    double ballSpeed = distanceCovered / timeElapsed; // 计算球的速度
+    
+
+    // 更新上一次球的位置和时间
+    lastBall = thisBall;
+    lastTime = currentTime;
+
+    // 打印信息
+    // std::cout << "上一次球的位置: " << lastBall << ", 这一次球的位置: " << thisBall << std::endl;
+    // std::cout << "球移动的距离: " << distanceCovered << ", 时间差: " << timeElapsed << ", 球的速度: " << ballSpeed << std::endl;
+
+    // 设置速度阈值，判断是否为大脚射门
+    const double speedThreshold = 6; // 速度阈值
+    const double distanceThreshold = 0.4; // 距离阈值
+    const double timeThreshold =0.04; // 时间阈值
+// && distanceCovered >= distanceThreshold && timeElapsed < timeThreshold  thisBall.getX() <lastBall.getX() &&
+    // 确认球朝向我方球门且满足速度和距离条件
+    if ( ballSpeed > speedThreshold && distanceCovered >= distanceThreshold && timeElapsed < timeThreshold) {
+        // std::cout << "是大脚射门" << std::endl;
+        return true;
+    }
+
+    // std::cout << "不是大脚射门" << std::endl;
+    return false;
+}
+
+bool NaoBehavior::isBallMovingTowardsOurGoal() {
+    static VecPosition lastBall;
+    const double angleTolerance = 3.0;
+    VecPosition thisBall = worldModel->getBall();
+
+    // 球门的位置
+    VecPosition ourGoal(-15, 0, 0);
+
+    // 计算球的运动方向角度和朝向球门的角度
+    double ballMovementAngle = atan2Deg(thisBall.getY() - lastBall.getY(), thisBall.getX() - lastBall.getX());
+    double ballToGoalAngle = atan2Deg(ourGoal.getY() - thisBall.getY(), ourGoal.getX() - thisBall.getX());
+
+    // 打印球的运动方向角度和朝向球门的角度
+    // std::cout << "球的运动方向角度: " << ballMovementAngle << ", 朝向球门的角度: " << ballToGoalAngle << std::endl;
+
+    // 判断球是否朝向球门
+    bool isMovingTowardsGoal = fabs(SIM::normalizeAngle(ballMovementAngle - ballToGoalAngle)) < angleTolerance &&
+                               thisBall.getX() < lastBall.getX();
+
+    // 更新上一次球的位置
+    lastBall = thisBall;
+  if(thisBall.getX()<1)  //粗略判断是不是在传球中还是射门
+  {
+    if (isMovingTowardsGoal) {
+        // std::cout << "敌方射门" << std::endl;
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+  }
+  else
+    return false;
 }
 
 bool NaoBehavior::ifAnyplayerBehindBall(int thisplayernumber)//是否有除本球员以外的其他球员在球后方1以内的位置

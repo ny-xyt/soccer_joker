@@ -34,8 +34,8 @@ void NaoBehavior::beam(double &beamX, double &beamY, double &beamAngle) {
             break;
         //midfielder
         case 5:
-            beamX = -5;
-            beamY = 6;
+            beamX = -6;
+            beamY = 7;
             beamAngle = 0;
             break;
         case 6:
@@ -51,7 +51,7 @@ void NaoBehavior::beam(double &beamX, double &beamY, double &beamAngle) {
             break;
             //forward
         case 8:
-            beamX = -0.2;
+            beamX = -0.3;
             beamY = 7;
             beamAngle = 0;
             break;
@@ -61,12 +61,12 @@ void NaoBehavior::beam(double &beamX, double &beamY, double &beamAngle) {
             beamAngle = 0;
             break;
         case 10:
-            beamX = -0.2;
+            beamX = -0.3;
             beamY = -8;
             beamAngle = 0;
             break;
         case 11:
-            beamX = -0.2;
+            beamX = -0.4;
             beamY = -3;
             beamAngle = 0;
     }
@@ -181,7 +181,7 @@ VecPosition NaoBehavior::getSpaceForRole(Role role) {
         if(posball.getX()<0.1&&posball.getX()>-0.1&&posball.getY()<0.1&&posball.getY()>-0.1)
             space = VecPosition(-0.2, -3, 0);
         else
-            space = VecPosition(11, 0, 0);
+            space = VecPosition(12, 0, 0);
         break;
     case GOALIE: //守门员
         space = VecPosition(-HALF_FIELD_X + 0.5, 0, 0);

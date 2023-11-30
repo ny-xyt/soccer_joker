@@ -192,7 +192,7 @@
 {
   "directory": "/home/xyt/dj/New stbr/build",
   "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -I\"/home/xyt/dj/New stbr/utwalk\" -I/usr/local/include/simspark -Wall -Wextra -Wno-unused -g   -std=c++11 -o CMakeFiles/agentspark.dir/utwalk/memory/MemoryBlock.cpp.o -c \"/home/xyt/dj/New stbr/utwalk/memory/MemoryBlock.cpp\"",
-  "file": "/home/xyt/dj/New stbr/utwalk/memory/MemoryBlock.cpp"
+  "file": "/home/xyt/dj/New stbr/utwalk/memory/Memory.cpp"
 },
 {
   "directory": "/home/xyt/dj/New stbr/build",
