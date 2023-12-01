@@ -1609,6 +1609,24 @@ bool NaoBehavior::isBallMovingQuickly() {
     return false;
 }
 
+bool NaoBehavior::isBallWithinCriticalDistance() {
+    // 定义扑救阈值
+    const double CRITICAL_DISTANCE = 5.0;  // 例如5米
+
+    // 获取球的位置
+    VecPosition ballPos = worldModel->getBall();
+
+    // 获取守门员的位置
+    VecPosition goaliePos = worldModel->getMyPosition();
+
+    // 计算球和守门员之间的距离
+    double distanceToBall = ballPos.getDistanceTo(goaliePos);
+
+    // 如果距离小于或等于阈值，则返回true
+    return distanceToBall <= CRITICAL_DISTANCE;
+}
+
+
 bool NaoBehavior::isBallMovingTowardsOurGoal() {
     static VecPosition lastBall;
     const double angleTolerance = 3.0;

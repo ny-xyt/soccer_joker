@@ -71,6 +71,7 @@ SkillType cy_findball(Role role);
 SkillType BACK_RIGHT_Tactic();
 SkillType FORWARD_MID_Tactic();
 bool isBallMovingTowardsOurGoal() ;
+bool isBallWithinCriticalDistance();
 bool isBallMovingQuickly() ;
 SkillType BACK_MID_Tactic();
 SkillType MID_LEFT_Tactic();

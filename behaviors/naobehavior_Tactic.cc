@@ -335,498 +335,125 @@ VecPosition NaoBehavior::GK_Tactic_pass() {
 
 SkillType NaoBehavior::HELPER_Tactic()
 {
-    who_close_to_ball();
+  who_close_to_ball();
     int  opp_less_place=calculateZoneDensities_A();
     VecPosition posball = worldModel->getBall();
     int closestopp = getOpponentClosestToBall();
     VecPosition opp_pos = worldModel->getOpponent(WO_OPPONENT1 + closestopp - 1);
-    if(posball.getX()>10&&posball.getX()<15&&posball.getY()>-5&&posball.getY()<5)
+    if(who_close_t_1.our_closest_player!=worldModel->getUNum())
     {
-        // if(posball.getX()>14)
-        // {
-            if(getPlayerClosestToBall()==worldModel->getUNum())
-            {
-                return kickBall(KICK_DRIBBLE, VecPosition(15, 0, 0));
-            }
-            else return cy_findball(HELPER);
-        // }
-        // else if(posball.getX()>13)
-        // {
-        //     if(getPlayerClosestToBall()==worldModel->getUNum())
-        //     {
-        //         return kickBall(KICK_IK, VecPosition(15, 0, 0));
-        //     }
-        //     else return cy_findball(HELPER);
-        // }
-        // else
-        // {
-        //     if(getPlayerClosestToBall()==worldModel->getUNum())
-        //     {
-        //         return kickBall(SHOOT_UT, VecPosition(15, 0, 0));
-        //     }
-        //     else return cy_findball(HELPER);
-        // }
-        
+     if(posball.getX()<0&&posball.getX()>-15&&posball.getY()<10&&posball.getY()>-10)
+     {
+       return goToSpace(getSpaceForRole(agentRoles[worldModel->getUNum()]));
+     }
+     else if(posball.getX()>0&&posball.getX()<9)
+     {
+         if(opp_less_place==1||opp_less_place==2)       
+    {
+                  return goToSpace(VecPosition(11,3,0));
+    }        
+    else if(opp_less_place==3||opp_less_place==4)   
+    {
+                 return goToSpace(VecPosition(11,-3,0));
     }
-    if (me.getDistanceTo(getSpaceForRole(agentRoles[worldModel->getUNum()])) < 0.5) {
-        // close enough to turn to the ball
-        return goToTargetRelative(VecPosition(), atan2Deg(worldModel->g2l(ball).getY(), worldModel->g2l(ball).getX()));
-    } else {
+     }
+     else if(posball.getX()>=9&&posball.getX()<15&&posball.getY()>7&&posball.getY()<10)
+    {  
+        if (me.getDistanceTo( VecPosition(12.5,-4)) < 0.5)
+        {
+          return goToTargetRelative(VecPosition(), atan2Deg(worldModel->g2l(ball).getY(), worldModel->g2l(ball).getX()));
+    } 
+    else
+     {
         // not close to the target
-        return goToSpace(getSpaceForRole(agentRoles[worldModel->getUNum()]));
+        return goToSpace( VecPosition(12.5,-4));
+      }
+    }
+else if(posball.getX()>=9&&posball.getX()<15&&posball.getY()<-7&&posball.getY()>-10)
+    {  
+        if (me.getDistanceTo( VecPosition(12.5,4)) < 0.5)
+        {
+          return goToTargetRelative(VecPosition(), atan2Deg(worldModel->g2l(ball).getY(), worldModel->g2l(ball).getX()));
+        }
+     else 
+       {
+        // not close to the target
+        return goToSpace( VecPosition(12.5,4));
+    }
+    }
+else
+{
+    return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
+}
+  }
+else
+{
+       if (me.getX()>=13&&me.getX()<15&&me.getY()>-5&&me.getY()<5)
+    {
+         if(me.getY()>=2.5&&me.getY()<5&&me.getX()>=14&&me.getX()<15)
+         {
+            return kickBall(KICK_IK,VecPosition(14.5,0,0));
+         }
+        if(me.getY()<-2.5&&me.getY()>-5&&me.getX()>=14&&me.getX()<15)
+         {
+            return kickBall(KICK_IK,VecPosition(14.5,0,0));
+         }
+        else if(me.getY()>0)
+        {    getinpassmode=false;
+            return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
+        }
+        else if (me.getY()<=0)
+        {    getinpassmode=false;
+            return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
+        }
+    }
+     else if (me.getX() > 13 && me.getX() < 15 && me.getY() <= -5 && me.getY() > -10)
+     {
+        if(me.getX()<=ball.getX())
+        {
+        // return kickBall(TONGDA_KICK_12M, getRolePosition(WING_LEFT).getX()+0.5);
+       if(getRolePosition(MID_LEFT).getX()>me.getX())
+       {
+        if(distanceBetweenPoints(me,getRolePosition(MID_LEFT).getX())<=9)
+        {
+             return kickBall(SHOOT_UT,getRolePosition(MID_LEFT).getX()+0.5);
+        }else
+        {
+              return kickBall(SHOOT_UT,getRolePosition(MID_LEFT).getX()+0.5);
+        }
+       }
+       else
+       {
+        return  kickBall(KICK_IK,VecPosition(posball.getX()+0.5,posball.getY()+0.5,0));
+       }
+        }
+        else
+        {
+            return  kickBall(KICK_IK,VecPosition(posball.getX()+0.5,posball.getY()+0.5,0));
+        }
+}
+     else if(me.getX()>=11&&me.getX()<13&&me.getY()<7&&me.getY()>-7)
+     {
+            if(me.getY()>=2.5&&me.getY()<7)
+            {    getinpassmode=false;
+                return shoot();
+            }
+            else if(me.getY()<2.5&&me.getY()>-2.5)
+            {getinpassmode=false;
+                return kickBall(KICK_IK,VecPosition(15,0, 0));
+            }
+            else if(me.getY()<=-2.5&&me.getY()>-7)
+            {    getinpassmode=false;
+                return kickBall(SHOOT_UT,VecPosition(15,0, 0));
+            }
+        }
+    else
+    {
+         return kickBall(KICK_DRIBBLE,VecPosition(15,0,0));
     }
    
-//     else if(who_close_t_1.our_closest_player!=worldModel->getUNum())
-//     {
-//      if(posball.getX()<0&&posball.getX()>-15&&posball.getY()<10&&posball.getY()>-10)
-//      {
-//        return goToSpace(getSpaceForRole(agentRoles[worldModel->getUNum()]));
-//      }
-//      else if(posball.getX()>0&&posball.getX()<9)
-//      {
-//          if(opp_less_place==1||opp_less_place==2)       
-//     {
-//                   return goToSpace(VecPosition(11,3,0));
-//     }        
-//     else if(opp_less_place==3||opp_less_place==4)   
-//     {
-//                  return goToSpace(VecPosition(11,-3,0));
-//     }
-//      }
-//      else if(posball.getX()>=9&&posball.getX()<15&&posball.getY()>7&&posball.getY()<10)
-//     {  
-//         if (me.getDistanceTo( VecPosition(12.5,-4)) < 0.5)
-//         {
-//           return goToTargetRelative(VecPosition(), atan2Deg(worldModel->g2l(ball).getY(), worldModel->g2l(ball).getX()));
-//     } 
-//     else
-//      {
-//         // not close to the target
-//         relse if(who_close_t_1.our_closest_player!=worldModel->getUNum())
-//     {
-//      if(posball.getX()<0&&posball.getX()>-15&&posball.getY()<10&&posball.getY()>-10)
-//      {
-//        return goToSpace(getSpaceForRole(agentRoles[worldModel->getUNum()]));
-//      }
-//      else if(posball.getX()>0&&posball.getX()<9)
-//      {
-//          if(opp_less_place==1||opp_less_place==2)       
-//     {
-//                   return goToSpace(VecPosition(11,3,0));
-//     }        
-//     else if(opp_less_place==3||opp_less_place==4)   
-//     {
-//                  return goToSpace(VecPosition(11,-3,0));
-//     }
-//      }
-//      else if(posball.getX()>=9&&posball.getX()<15&&posball.getY()>7&&posball.getY()<10)
-//     {  
-//         if (me.getDistanceTo( VecPosition(12.5,-4)) < 0.5)
-//         {
-//           return goToTargetRelative(VecPosition(), atan2Deg(worldModel->g2l(ball).getY(), worldModel->g2l(ball).getX()));
-//     } 
-//     else
-//      {
-//         // not close to the target
-//         return goToSpace( VecPosition(12.5,-4));
-//       }
-//     }
-// else if(posball.getX()>=9&&posball.getX()<15&&posball.getY()<-7&&posball.getY()>-10)
-//     {  
-//         if (me.getDistanceTo( VecPosition(12.5,4)) < 0.5)
-//         {
-//           return goToTargetRelative(VecPosition(), atan2Deg(worldModel->g2l(ball).getY(), worldModel->g2l(ball).getX()));
-//         }
-//      else 
-//        {
-//         // not close to the target
-//         return goToSpace( VecPosition(12.5,4));
-//     }
-//     }
-//     else
-//     {
-//          return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
-//     }
-//   }
-// else
-// {
-//        if (me.getX()>=13&&me.getX()<15&&me.getY()>-5&&me.getY()<5)
-//     {
-//          if(me.getY()>=2.5&&me.getY()<5&&me.getX()>=14&&me.getX()<15)
-//          {
-//             return kickBall(KICK_IK,VecPosition(14.5,0,0));
-//          }
-//         if(me.getY()<-2.5&&me.getY()>-5&&me.getX()>=14&&me.getX()<15)
-//          {
-//             return kickBall(KICK_IK,VecPosition(14.5,0,0));
-//          }
-//         else if(me.getY()>0)
-//         {    getinpassmode=false;
-//             return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
-//         }
-//         else if (me.getY()<=0)
-//         {    getinpassmode=false;
-//             return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
-//         }
-//     }
-//      else if (me.getX() > 13 && me.getX() < 15 && me.getY() <= -5 && me.getY() > -10)
-//      {
-//         if(me.getX()<=ball.getX())
-//         {
-//         // return kickBall(TONGDA_KICK_12M, getRolePosition(WING_LEFT).getX()+0.5);
-//        if(getRolePosition(MID_LEFT).getX()>me.getX())
-//        {
-//         if(distanceBetweenPoints(me,getRolePosition(MID_LEFT).getX())<=9)
-//         {
-//              return kickBall(SHOOT_UT,getRolePosition(MID_LEFT).getX()+0.5);
-//         }else
-//         {
-//               return kickBall(SHOOT_UT,getRolePosition(MID_LEFT).getX()+0.5);
-//         }
-//        }
-//        else
-//        {
-//         return  kickBall(KICK_IK,VecPosition(posball.getX()+0.5,posball.getY()+0.5,0));
-//        }
-//         }
-//         else
-//         {
-//             return  kickBall(KICK_IK,VecPosition(posball.getX()+0.5,posball.getY()+0.5,0));
-//         }
-// }
-//      else if(me.getX()>=11&&me.getX()<13&&me.getY()<7&&me.getY()>-7)
-//      {
-//             if(me.getY()>=2.5&&me.getY()<7)
-//             {    getinpassmode=false;
-//                 return shoot();
-//             }
-//             else if(me.getY()<2.5&&me.getY()>-2.5)
-//             {getinpassmode=false;
-//                 return kickBall(KICK_IK,VecPosition(15,0, 0));
-//             }
-//             else if(me.getY()<=-2.5&&me.getY()>-7)
-//             {    getinpassmode=false;
-//                 return kickBall(SHOOT_UT,VecPosition(15,0, 0));
-//             }
-//         }
-//     else
-//     {
-//          return shoot();
-//     }
-   
-// }eturn goToSpace( VecPosition(12.5,-4));
-//       }
-//     }
-// else if(posball.getX()>=9&&posball.getX()<15&&posball.getY()<-7&&posball.getY()>-10)
-//     {  
-//         if (me.getDistanceTo( VecPosition(12.5,4)) < 0.5)
-//         {
-//           return goToTargetRelative(VecPosition(), atan2Deg(worldModel->g2l(ball).getY(), worldModel->g2l(ball).getX()));
-//         }else if(who_close_t_1.our_closest_player!=worldModel->getUNum())
-//     {
-//      if(posball.getX()<0&&posball.getX()>-15&&posball.getY()<10&&posball.getY()>-10)
-//      {
-//        return goToSpace(getSpaceForRole(agentRoles[worldModel->getUNum()]));
-//      }
-//      else if(posball.getX()>0&&posball.getX()<9)
-//      {
-//          if(opp_less_place==1||opp_less_place==2)       
-//     {
-//                   return goToSpace(VecPosition(11,3,0));
-//     }        
-//     else if(opp_less_place==3||opp_less_place==4)   
-//     {
-//                  return goToSpace(VecPosition(11,-3,0));
-//     }
-//      }
-//      else if(posball.getX()>=9&&posball.getX()<15&&posball.getY()>7&&posball.getY()<10)
-//     {  
-//         if (me.getDistanceTo( VecPosition(12.5,-4)) < 0.5)
-//         {
-//           return goToTargetRelative(VecPosition(), atan2Deg(worldModel->g2l(ball).getY(), worldModel->g2l(ball).getX()));
-//     } 
-//     else
-//      {
-//         // not close to the target
-//         return goToSpace( VecPosition(12.5,-4));
-//       }
-//     }
-// else if(posball.getX()>=9&&posball.getX()<15&&posball.getY()<-7&&posball.getY()>-10)
-//     {  
-//         if (me.getDistanceTo( VecPosition(12.5,4)) < 0.5)
-//         {
-//           return goToTargetRelative(VecPosition(), atan2Deg(worldModel->g2l(ball).getY(), worldModel->g2l(ball).getX()));
-//         }
-//      else 
-//        {
-//         // not close to the target
-//         return goToSpace( VecPosition(12.5,4));
-//     }
-//     }
-//     else
-//     {
-//          return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
-//     }
-//   }
-// else
-// {
-//        if (me.getX()>=13&&me.getX()<15&&me.getY()>-5&&me.getY()<5)
-//     {
-//          if(me.getY()>=2.5&&me.getY()<5&&me.getX()>=14&&me.getX()<15)
-//          {
-//             return kickBall(KICK_IK,VecPosition(14.5,0,0));
-//          }
-//         if(me.getY()<-2.5&&me.getY()>-5&&me.getX()>=14&&me.getX()<15)
-//          {
-//             return kickBall(KICK_IK,VecPosition(14.5,0,0));
-//          }
-//         else if(me.getY()>0)
-//         {    getinpassmode=false;
-//             return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
-//         }
-//         else if (me.getY()<=0)
-//         {    getinpassmode=false;
-//             return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
-//         }
-//     }
-//      else if (me.getX() > 13 && me.getX() < 15 && me.getY() <= -5 && me.getY() > -10)
-//      {
-//         if(me.getX()<=ball.getX())
-//         {
-//         // return kickBall(TONGDA_KICK_12M, getRolePosition(WING_LEFT).getX()+0.5);
-//        if(getRolePosition(MID_LEFT).getX()>me.getX())
-//        {
-//         if(distanceBetweenPoints(me,getRolePosition(MID_LEFT).getX())<=9)
-//         {
-//              return kickBall(SHOOT_UT,getRolePosition(MID_LEFT).getX()+0.5);
-//         }else
-//         {
-//               return kickBall(SHOOT_UT,getRolePosition(MID_LEFT).getX()+0.5);
-//         }
-//        }
-//        else
-//        {
-//         return  kickBall(KICK_IK,VecPosition(posball.getX()+0.5,posball.getY()+0.5,0));
-//        }
-//         }
-//         else
-//         {
-//             return  kickBall(KICK_IK,VecPosition(posball.getX()+0.5,posball.getY()+0.5,0));
-//         }
-// }
-//      else if(me.getX()>=11&&me.getX()<13&&me.getY()<7&&me.getY()>-7)
-//      {
-//             if(me.getY()>=2.5&&me.getY()<7)
-//             {    getinpassmode=false;
-//                 return shoot();
-//             }
-//             else if(me.getY()<2.5&&me.getY()>-2.5)
-//             {getinpassmode=false;
-//                 return kickBall(KICK_IK,VecPosition(15,0, 0));
-//             }
-//             else if(me.getY()<=-2.5&&me.getY()>-7)
-//             {    getinpassmode=false;
-//                 return kickBall(SHOOT_UT,VecPosition(15,0, 0));
-//             }
-//         }
-//     else
-//     {
-//          return shoot();
-//     }
-   
-// }
-//      else 
-//        {
-//         // not close to the target
-//         return goToSpace( VecPosition(12.5,4));else if(who_close_t_1.our_closest_player!=worldModel->getUNum())
-//     {
-//      if(posball.getX()<0&&posball.getX()>-15&&posball.getY()<10&&posball.getY()>-10)
-//      {
-//        return goToSpace(getSpaceForRole(agentRoles[worldModel->getUNum()]));
-//      }
-//      else if(posball.getX()>0&&posball.getX()<9)
-//      {
-//          if(opp_less_place==1||opp_less_place==2)       
-//     {
-//                   return goToSpace(VecPosition(11,3,0));
-//     }        
-//     else if(opp_less_place==3||opp_less_place==4)   
-//     {
-//                  return goToSpace(VecPosition(11,-3,0));
-//     }
-//      }
-//      else if(posball.getX()>=9&&posball.getX()<15&&posball.getY()>7&&posball.getY()<10)
-//     {  
-//         if (me.getDistanceTo( VecPosition(12.5,-4)) < 0.5)
-//         {
-//           return goToTargetRelative(VecPosition(), atan2Deg(worldModel->g2l(ball).getY(), worldModel->g2l(ball).getX()));
-//     } 
-//     else
-//      {
-//         // not close to the target
-//         return goToSpace( VecPosition(12.5,-4));
-//       }
-//     }
-// else if(posball.getX()>=9&&posball.getX()<15&&posball.getY()<-7&&posball.getY()>-10)
-//     {  
-//         if (me.getDistanceTo( VecPosition(12.5,4)) < 0.5)
-//         {
-//           return goToTargetRelative(VecPosition(), atan2Deg(worldModel->g2l(ball).getY(), worldModel->g2l(ball).getX()));
-//         }
-//      else 
-//        {
-//         // not close to the target
-//         return goToSpace( VecPosition(12.5,4));
-//     }
-//     }
-//     else
-//     {
-//          return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
-//     }
-//   }
-// else
-// {
-//        if (me.getX()>=13&&me.getX()<15&&me.getY()>-5&&me.getY()<5)
-//     {
-//          if(me.getY()>=2.5&&me.getY()<5&&me.getX()>=14&&me.getX()<15)
-//          {
-//             return kickBall(KICK_IK,VecPosition(14.5,0,0));
-//          }
-//         if(me.getY()<-2.5&&me.getY()>-5&&me.getX()>=14&&me.getX()<15)
-//          {
-//             return kickBall(KICK_IK,VecPosition(14.5,0,0));
-//          }
-//         else if(me.getY()>0)
-//         {    getinpassmode=false;
-//             return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
-//         }
-//         else if (me.getY()<=0)
-//         {    getinpassmode=false;
-//             return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
-//         }
-//     }
-//      else if (me.getX() > 13 && me.getX() < 15 && me.getY() <= -5 && me.getY() > -10)
-//      {
-//         if(me.getX()<=ball.getX())
-//         {
-//         // return kickBall(TONGDA_KICK_12M, getRolePosition(WING_LEFT).getX()+0.5);
-//        if(getRolePosition(MID_LEFT).getX()>me.getX())
-//        {
-//         if(distanceBetweenPoints(me,getRolePosition(MID_LEFT).getX())<=9)
-//         {
-//              return kickBall(SHOOT_UT,getRolePosition(MID_LEFT).getX()+0.5);
-//         }else
-//         {
-//               return kickBall(SHOOT_UT,getRolePosition(MID_LEFT).getX()+0.5);
-//         }
-//        }
-//        else
-//        {
-//         return  kickBall(KICK_IK,VecPosition(posball.getX()+0.5,posball.getY()+0.5,0));
-//        }
-//         }
-//         else
-//         {
-//             return  kickBall(KICK_IK,VecPosition(posball.getX()+0.5,posball.getY()+0.5,0));
-//         }
-// }
-//      else if(me.getX()>=11&&me.getX()<13&&me.getY()<7&&me.getY()>-7)
-//      {
-//             if(me.getY()>=2.5&&me.getY()<7)
-//             {    getinpassmode=false;
-//                 return shoot();
-//             }
-//             else if(me.getY()<2.5&&me.getY()>-2.5)
-//             {getinpassmode=false;
-//                 return kickBall(KICK_IK,VecPosition(15,0, 0));
-//             }
-//             else if(me.getY()<=-2.5&&me.getY()>-7)
-//             {    getinpassmode=false;
-//                 return kickBall(SHOOT_UT,VecPosition(15,0, 0));
-//             }
-//         }
-//     else
-//     {
-//          return shoot();
-//     }
-   
-// }
-//     }
-//     }
-//     else
-//     {
-//          return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
-//     }
-//   }
-// else
-// {
-//        if (me.getX()>=13&&me.getX()<15&&me.getY()>-5&&me.getY()<5)
-//     {
-//          if(me.getY()>=2.5&&me.getY()<5&&me.getX()>=14&&me.getX()<15)
-//          {
-//             return kickBall(KICK_IK,VecPosition(14.5,0,0));
-//          }
-//         if(me.getY()<-2.5&&me.getY()>-5&&me.getX()>=14&&me.getX()<15)
-//          {
-//             return kickBall(KICK_IK,VecPosition(14.5,0,0));
-//          }
-//         else if(me.getY()>0)
-//         {    getinpassmode=false;
-//             return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
-//         }
-//         else if (me.getY()<=0)
-//         {    getinpassmode=false;
-//             return kickBall(KICK_DRIBBLE, VecPosition(15, 0.5, 0));
-//         }
-//     }
-//      else if (me.getX() > 13 && me.getX() < 15 && me.getY() <= -5 && me.getY() > -10)
-//      {
-//         if(me.getX()<=ball.getX())
-//         {
-//         // return kickBall(TONGDA_KICK_12M, getRolePosition(WING_LEFT).getX()+0.5);
-//        if(getRolePosition(MID_LEFT).getX()>me.getX())
-//        {
-//         if(distanceBetweenPoints(me,getRolePosition(MID_LEFT).getX())<=9)
-//         {
-//              return kickBall(SHOOT_UT,getRolePosition(MID_LEFT).getX()+0.5);
-//         }else
-//         {
-//               return kickBall(SHOOT_UT,getRolePosition(MID_LEFT).getX()+0.5);
-//         }
-//        }
-//        else
-//        {
-//         return  kickBall(KICK_IK,VecPosition(posball.getX()+0.5,posball.getY()+0.5,0));
-//        }
-//         }
-//         else
-//         {
-//             return  kickBall(KICK_IK,VecPosition(posball.getX()+0.5,posball.getY()+0.5,0));
-//         }
-// }
-//      else if(me.getX()>=11&&me.getX()<13&&me.getY()<7&&me.getY()>-7)
-//      {
-//             if(me.getY()>=2.5&&me.getY()<7)
-//             {    getinpassmode=false;
-//                 return shoot();
-//             }
-//             else if(me.getY()<2.5&&me.getY()>-2.5)
-//             {getinpassmode=false;
-//                 return kickBall(KICK_IK,VecPosition(15,0, 0));
-//             }
-//             else if(me.getY()<=-2.5&&me.getY()>-7)
-//             {    getinpassmode=false;
-//                 return kickBall(SHOOT_UT,VecPosition(15,0, 0));
-//             }
-//         }
-//     else
-//     {
-//          return shoot();
-//     }
-   
-// }
 }
-
+}
 
 SkillType NaoBehavior::GOALIE_Tactic() {
      VecPosition posball = worldModel->getBall();
@@ -883,15 +510,13 @@ double ballAngle = atan2Deg(ballRelative.getY(), ballRelative.getX());
             }
             else {
                 //&& isBallMovingTowardsOurGoal()
-     if (isBallMovingQuickly() && isBallMovingTowardsOurGoal()) 
+     if (isBallMovingQuickly() && isBallMovingTowardsOurGoal()&& isBallWithinCriticalDistance()) 
     //  if (isBallMovingQuickly())
     {
         VecPosition goaliePosition = worldModel->getMyPosition();
         double ballY = posball.getY();
 
         // 判断球是从左侧还是右侧射来
-        if(posball.getX()<=-5)
-    {
         if (ballY > goaliePosition.getY()) {
             // 球从左侧射来，执行左扑救动作
             //  std::cout << "左扑救"<< std::endl;
@@ -905,32 +530,33 @@ double ballAngle = atan2Deg(ballRelative.getY(), ballRelative.getX());
         else{
             // std::cout << "茶腿"<< std::endl;
             return  SKILL_BLOCK_LEFT;
-        }
     }
+    } 
     else
-    {
-       return goToTargetRelative(VecPosition(), atan2Deg(worldModel->g2l(ball).getY(), worldModel->g2l(ball).getX()));
-    }
-    }  
-       else {
+ {
     // 检查机器人是否倒下
-    if (worldModel->getFallenTeammate(worldModel->getUNum()) ){
+    if (worldModel->getFallenTeammate(worldModel->getUNum()) )
+    {
         // 如果机器人倒下了，执行站起来的动作
         return SKILL_STAND;
-    } else {
+    } 
+    else 
+    {
        if (me.getDistanceTo(getSpaceForRole(agentRoles[worldModel->getUNum()])) < 0.5) {
         // close enough to turn to the ball
         return goToTargetRelative(VecPosition(), atan2Deg(worldModel->g2l(ball).getY(), worldModel->g2l(ball).getX()));
-    } else {
+    } 
+    else 
+    {
         // not close to the target
         return goToSpace(getSpaceForRole(agentRoles[worldModel->getUNum()]));
     }
     }
 }
+            }
+}
 
 
-}
-}
 SkillType NaoBehavior::BACK_MID_Tactic()
 {
     VecPosition posball = worldModel->getBall();
